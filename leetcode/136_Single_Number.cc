@@ -1,4 +1,4 @@
-#include <iostream>
+#include "base.h"
 
 using namespace std;
 
@@ -20,3 +20,10 @@ class Solution {
   }
 };
 
+int main() {
+  int arr_1[] = {1,3,5,5,7,8,1,3,7};
+  vector<int> nums_1(begin(arr_1), end(arr_1));
+  Solution solution_handler;
+  cout << solution_handler.singleNumber(nums_1) << endl;
+  return 0;
+}
