@@ -9,6 +9,7 @@
 #define _BASE_H
 
 #include <iostream>
+#include <algorithm>
 #include <vector>
 #include <set>
 #include <map>

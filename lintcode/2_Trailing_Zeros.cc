@@ -92,13 +92,13 @@ public:
   // optimization v3
   // Accepted
   long long trailingZeros(long long n) {
-    long long res = 0;
+    long long result = 0;
     long long temp = n;
     while (temp != 0) {
       temp /= 5;
-      res += temp;
+      result += temp;
     }
-    return res;
+    return result;
   }
 };
 
