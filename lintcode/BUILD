@@ -13,6 +13,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_41_Maximum_Subarray",
+  srcs = [
+    "41_Maximum_Subarray.cc",
+  ]
+)
+
+cc_binary (
   name = "lintcode_78_Longest_Common_Prefix",
   srcs = [
     "78_Longest_Common_Prefix.cc",
