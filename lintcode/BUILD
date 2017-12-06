@@ -20,6 +20,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_70_Binary_Tree_Level_Order_Traversal_II",
+  srcs = [
+    "70_Binary_Tree_Level_Order_Traversal_II.cc",
+  ]
+)
+
+cc_binary (
   name = "lintcode_78_Longest_Common_Prefix",
   srcs = [
     "78_Longest_Common_Prefix.cc",
