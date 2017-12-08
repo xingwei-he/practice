@@ -37,6 +37,6 @@ public:
   }
 };
 
-it main() {
-  reutrn 0;
+int main() {
+  return 0;
 }

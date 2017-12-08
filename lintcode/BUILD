@@ -34,6 +34,27 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_99_Reorder_List",
+  srcs = [
+    "99_Reorder_List.cc",
+  ],
+)
+
+cc_binary (
+  name = "lintcode_100_Remove_Duplicates_from_Sorted_Array",
+  srcs = [
+    "100_Remove_Duplicates_from_Sorted_Array.cc",
+  ],
+)
+
+#cc_binary (
+#  name = "lintcode_132_Word_Search_II",
+#  srcs = [
+#    "132_Word_Search_II.cc",
+#  ]
+#)
+
+cc_binary (
   name = "lintcode_423_Valid_Parentheses",
   srcs = [
     "423_Valid_Parentheses.cc",
