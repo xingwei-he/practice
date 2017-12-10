@@ -55,6 +55,27 @@ cc_binary (
 #)
 
 cc_binary (
+  name = "lintcode_491_Palindrome_Number",
+  srcs = [
+    "491_Palindrome_Number.cc",
+  ],
+)
+
+cc_binary (
+  name = "lintcode_627_Longest_Palindrome",
+  srcs = [
+    "627_Longest_Palindrome.cc",
+  ],
+)
+
+cc_binary (
+  name = "lintcode_678_Convert_Palindrome",
+  srcs = [
+    "678_Convert_Palindrome.cc",
+  ],
+)
+
+cc_binary (
   name = "lintcode_423_Valid_Parentheses",
   srcs = [
     "423_Valid_Parentheses.cc",
