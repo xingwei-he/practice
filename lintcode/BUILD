@@ -34,6 +34,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_96_Partition_List",
+  srcs = [
+    "96_Partition_List.cc",
+  ],
+)
+
+cc_binary (
   name = "lintcode_98_Sort_List",
   srcs = [
     "98_Sort_List.cc",
