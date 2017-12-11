@@ -34,6 +34,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_98_Sort_List",
+  srcs = [
+    "98_Sort_List.cc",
+  ],
+)
+
+cc_binary (
   name = "lintcode_99_Reorder_List",
   srcs = [
     "99_Reorder_List.cc",
@@ -61,12 +68,12 @@ cc_binary (
   ],
 )
 
-cc_binary (
-  name = "lintcode_627_Longest_Palindrome",
-  srcs = [
-    "627_Longest_Palindrome.cc",
-  ],
-)
+#cc_binary (
+#  name = "lintcode_627_Longest_Palindrome",
+#  srcs = [
+#    "627_Longest_Palindrome.cc",
+#  ],
+#)
 
 cc_binary (
   name = "lintcode_678_Convert_Palindrome",
