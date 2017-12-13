@@ -34,6 +34,20 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_80_Median",
+  srcs = [
+    "80_Median.cc",
+  ],
+)
+
+cc_binary (
+  name = "lintcode_89_k_Sum",
+  srcs = [
+    "89_k_Sum.cc",
+  ],
+)
+
+cc_binary (
   name = "lintcode_96_Partition_List",
   srcs = [
     "96_Partition_List.cc",
@@ -67,6 +81,13 @@ cc_binary (
 #    "132_Word_Search_II.cc",
 #  ]
 #)
+
+cc_binary (
+  name = "lintcode_136_Palindrome_Partitioning",
+  srcs = [
+    "136_Palindrome_Partitioning.cc",
+  ],
+)
 
 cc_binary (
   name = "lintcode_423_Valid_Parentheses",
