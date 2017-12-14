@@ -3,7 +3,7 @@
  * File Name:136_Palindrome_Partitioning.cc
  * Author:
  * Mail:
- * Created Time:星期2017年12月10日 星期日 21时47分51秒
+ * Created Time:2017年12月10日 星期日 21时47分51秒
  ***************************************************/
 #include <iostream>
 

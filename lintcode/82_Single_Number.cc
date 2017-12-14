@@ -24,23 +24,14 @@ public:
    * @param A: An integer array
    * @return: An integer
    */
-  int singleNumber(vector<int> &A) {
-    vector<int> res(64, 0);
-    for (int i = 0; i < A.size(); i++) {
-      int j = 63;
-      int temp = A[i];
-      while (temp != 0 && j >= 0) {
-	res[j] = res[j] ^ (temp % 2);
-	temp /= 2;
-	j--;
-      }
+  int singleNumber(vector<int>& nums) {
+    int res = 0;
+    for (int i = 0; i < nums.size(); i++) {
+      res ^= nums[i];
     }
-    int real_res = 0;
-    for (int i = 0; i < 64; i++) {
-      real_res = real_res * 2 + res[i];
-    }
-    return real_res;
+    return res;
   }
+
 };
 
 int main() {

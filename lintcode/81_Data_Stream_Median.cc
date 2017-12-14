@@ -87,7 +87,6 @@ public:
 
   // 向下调整堆 - 大根堆
   void adjustDownMaxHeap(vector<int>& heap, int top, int len) {
-    int temp = 0;
     int i = top;
     while (i < len/2) {
       int j = 2*i + 1;
