@@ -41,11 +41,18 @@ cc_binary (
 )
 
 cc_binary (
-  name = "lintcode_89_k_Sum",
+  name = "lintcode_81_Data_Stream_Median",
   srcs = [
-    "89_k_Sum.cc",
+    "81_Data_Stream_Median.cc",
   ],
 )
+
+#cc_binary (
+#  name = "lintcode_89_k_Sum",
+#  srcs = [
+#    "89_k_Sum.cc",
+#  ],
+#)
 
 cc_binary (
   name = "lintcode_96_Partition_List",
