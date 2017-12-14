@@ -47,6 +47,13 @@ cc_binary (
   ],
 )
 
+cc_binary (
+  name = "lintcode_82_Single_Number",
+  srcs = [
+    "82_Single_Number.cc",
+  ],
+)
+
 #cc_binary (
 #  name = "lintcode_89_k_Sum",
 #  srcs = [
