@@ -96,13 +96,6 @@ cc_binary (
   ],
 )
 
-#cc_binary (
-#  name = "lintcode_89_k_Sum",
-#  srcs = [
-#    "89_k_Sum.cc",
-#  ],
-#)
-
 cc_binary (
   name = "lintcode_96_Partition_List",
   srcs = [
@@ -158,13 +151,6 @@ cc_binary (
     "491_Palindrome_Number.cc",
   ],
 )
-
-#cc_binary (
-#  name = "lintcode_627_Longest_Palindrome",
-#  srcs = [
-#    "627_Longest_Palindrome.cc",
-#  ],
-#)
 
 cc_binary (
   name = "lintcode_678_Convert_Palindrome",

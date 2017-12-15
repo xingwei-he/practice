@@ -63,5 +63,6 @@ int main() {
   Solution sl;
   bool res = sl.compareStrings(strA, strB);
   cout << boolalpha << res << endl;
+
   return 0;
 }
