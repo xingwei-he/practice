@@ -27,6 +27,20 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_52_Next_Permutation",
+  srcs = [
+    "52_Next_Permutation.cc",
+  ],
+)
+
+cc_binary (
+  name = "lintcode_53_Reverse_Words_in_a_String",
+  srcs = [
+    "53_Reverse_Words_in_a_String.cc",
+  ],
+)
+
+cc_binary (
   name = "lintcode_70_Binary_Tree_Level_Order_Traversal_II",
   srcs = [
     "70_Binary_Tree_Level_Order_Traversal_II.cc",
