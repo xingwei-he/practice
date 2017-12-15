@@ -55,6 +55,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_60_Search_Insert_Position",
+  srcs = [
+    "60_Search_Insert_Position.cc",
+  ],
+)
+
+cc_binary (
   name = "lintcode_70_Binary_Tree_Level_Order_Traversal_II",
   srcs = [
     "70_Binary_Tree_Level_Order_Traversal_II.cc",
