@@ -138,6 +138,20 @@ cc_binary (
   ],
 )
 
+cc_binary (
+  name = "lintcode_102_Linked_List_Cycle",
+  srcs = [
+    "102_Linked_List_Cycle.cc",
+  ],
+)
+
+cc_binary (
+  name = "lintcode_103_Linked_List_Cycle_II",
+  srcs = [
+    "103_Linked_List_Cycle_II.cc",
+  ],
+)
+
 #cc_binary (
 #  name = "lintcode_132_Word_Search_II",
 #  srcs = [
