@@ -159,6 +159,13 @@ cc_binary (
   ],
 )
 
+cc_binary (
+  name = "lintcode_105_Copy_List_with_Random_Pointer",
+  srcs = [
+    "105_Copy_List_with_Random_Pointer.cc",
+  ],
+)
+
 #cc_binary (
 #  name = "lintcode_132_Word_Search_II",
 #  srcs = [
