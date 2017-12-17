@@ -152,6 +152,13 @@ cc_binary (
   ],
 )
 
+cc_binary (
+  name = "lintcode_104_Merge_k_Sorted_Lists",
+  srcs = [
+    "104_Merge_k_Sorted_Lists.cc",
+  ],
+)
+
 #cc_binary (
 #  name = "lintcode_132_Word_Search_II",
 #  srcs = [
