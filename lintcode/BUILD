@@ -138,6 +138,34 @@ cc_binary (
   ],
 )
 
+cc_binary (
+  name = "lintcode_102_Linked_List_Cycle",
+  srcs = [
+    "102_Linked_List_Cycle.cc",
+  ],
+)
+
+cc_binary (
+  name = "lintcode_103_Linked_List_Cycle_II",
+  srcs = [
+    "103_Linked_List_Cycle_II.cc",
+  ],
+)
+
+cc_binary (
+  name = "lintcode_104_Merge_k_Sorted_Lists",
+  srcs = [
+    "104_Merge_k_Sorted_Lists.cc",
+  ],
+)
+
+cc_binary (
+  name = "lintcode_105_Copy_List_with_Random_Pointer",
+  srcs = [
+    "105_Copy_List_with_Random_Pointer.cc",
+  ],
+)
+
 #cc_binary (
 #  name = "lintcode_132_Word_Search_II",
 #  srcs = [
