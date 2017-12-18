@@ -195,6 +195,20 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_167_Add_Two_Numbers",
+  srcs = [
+    "167_Add_Two_Numbers.cc",
+  ],
+)
+
+cc_binary (
+  name = "lintcode_221_Add_Two_Numbers_II",
+  srcs = [
+    "221_Add_Two_Numbers_II.cc",
+  ],
+)
+
+cc_binary (
   name = "lintcode_423_Valid_Parentheses",
   srcs = [
     "423_Valid_Parentheses.cc",
