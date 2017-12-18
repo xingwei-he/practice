@@ -62,6 +62,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_61_Search_for_a_Range",
+  srcs = [
+    "61_Search_for_a_Range.cc",
+  ],
+)
+
+cc_binary (
   name = "lintcode_70_Binary_Tree_Level_Order_Traversal_II",
   srcs = [
     "70_Binary_Tree_Level_Order_Traversal_II.cc",
