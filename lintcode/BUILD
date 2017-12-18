@@ -76,6 +76,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_64_Merge_Sorted_Array",
+  srcs = [
+    "64_Merge_Sorted_Array.cc",
+  ],
+)
+
+cc_binary (
   name = "lintcode_70_Binary_Tree_Level_Order_Traversal_II",
   srcs = [
     "70_Binary_Tree_Level_Order_Traversal_II.cc",
