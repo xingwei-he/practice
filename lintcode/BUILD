@@ -93,7 +93,14 @@ cc_binary (
   name = "lintcode_75_Find_Peak_Element",
   srcs = [
     "75_Find_Peak_Element.cc",
-  ]
+  ],
+)
+
+cc_binary (
+  name = "lintcode_76_Longest_Increasing_Subsequence",
+  srcs = [
+    "76_Longest_Increasing_Subsequence.cc",
+  ],
 )
 
 cc_binary (
