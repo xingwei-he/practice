@@ -36,24 +36,34 @@ public:
     if (nums.size() <= 0) {
       return 0;
     }
+    int global_lis = 0;
     int lis = 0;
     // dp 记录以 nums[i] 为结尾的 LIS 的长度
+    vector<int> dp(nums.size(), 1);
     for (int i = 1; i < nums.size(); i++) {
-      for ()
+      lis = 1;
+      for (int j = 0; j < i; j++) {
+	if (nums[i] > nums[j] && (dp[j] + 1) > lis) {
+	  lis = dp[j] + 1;
+	}
+      }
+      dp[i] = lis;
+      if (global_lis < lis) {
+	global_lis = lis;
+      }
     }
-      
     for (int i = 0; i < dp.size(); i++) {
       cout << setw(4) << dp[i];
     }
     cout << endl;
-    return lis;
+    return global_lis;
   }
 };
 
 int main() {
   //int arr[] = {4, 2, 4, 5, 3, 7};
-  //int arr[] = {88,4,24,82,86,1,56,74,71,9,8,18,26,53,77,87,60,27,69,17,76,23,67,14,98,13,10,83,20,43,39,29,92,31,0,30,90,70,37,59};
-  int arr[] = {88,4,24,82,86,1,56,74,71,9,8,18};
+  int arr[] = {88,4,24,82,86,1,56,74,71,9,8,18,26,53,77,87,60,27,69,17,76,23,67,14,98,13,10,83,20,43,39,29,92,31,0,30,90,70,37,59};
+  //int arr[] = {88,4,24,82,86,1,56,74,71,9,8,18};
   vector<int> nums(begin(arr), end(arr));
   for (int i = 0; i < nums.size(); i++) {
     cout << setw(4) << nums[i]; 
