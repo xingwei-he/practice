@@ -90,6 +90,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_75_Find_Peak_Element",
+  srcs = [
+    "75_Find_Peak_Element.cc",
+  ]
+)
+
+cc_binary (
   name = "lintcode_78_Longest_Common_Prefix",
   srcs = [
     "78_Longest_Common_Prefix.cc",
