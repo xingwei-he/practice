@@ -31,7 +31,8 @@ public:
    * @param nums: An integer array
    * @return: The length of LIS (longest increasing subsequence)
    */
-  // DP
+  /*
+  // DP 时间复杂度为 O(n^2)
   int longestIncreasingSubsequence(vector<int> &nums) {
     if (nums.size() <= 0) {
       return 0;
@@ -58,13 +59,48 @@ public:
     cout << endl;
     return global_lis;
   }
+  */
+
+  // DP 时间复杂度为 O(n*log(n))
+  int longestIncreasingSubsequence(vector<int> &nums) {
+    if (nums.size() <= 0) {
+      return 0;
+    }
+    // notebook[i] 记录长度为 i 的最小结尾值
+    vector<int> notebook(nums.size() + 1, -1);
+    notebook[1] = nums[0];
+    int notebook_len = 1;
+    for (int i = 0; i < nums.size(); i++) {
+      int left = 1;
+      int right = notebook_len;
+      int mid = 0;
+      // 二分查找在 notebook 中第一个大于 nums[i] 的元素
+      while (left < right) {
+	mid = (left + right) / 2;
+	if (nums[i] >= notebook[mid]) {
+	  left = mid + 1;
+	} else {
+	  right = mid;
+	}
+      }
+
+      if (notebook[right] > nums[i] && notebook[right - 1] < nums[i]) {
+	notebook[right] = nums[i];
+      } else if (notebook[right] < nums[i]) {
+	notebook[right + 1] = nums[i];
+	notebook_len++;
+      }
+    }
+    return notebook_len;
+  }
 };
 
 int main() {
   //int arr[] = {4, 2, 4, 5, 3, 7};
-  int arr[] = {88,4,24,82,86,1,56,74,71,9,8,18,26,53,77,87,60,27,69,17,76,23,67,14,98,13,10,83,20,43,39,29,92,31,0,30,90,70,37,59};
+  //int arr[] = {88,4,24,82,86,1,56,74,71,9,8,18,26,53,77,87,60,27,69,17,76,23,67,14,98,13,10,83,20,43,39,29,92,31,0,30,90,70,37,59};
   //int arr[] = {88,4,24,82,86,1,56,74,71,9,8,18};
-  vector<int> nums(begin(arr), end(arr));
+  //vector<int> nums(begin(arr), end(arr));
+  vector<int> nums(0);
   for (int i = 0; i < nums.size(); i++) {
     cout << setw(4) << nums[i]; 
   }
