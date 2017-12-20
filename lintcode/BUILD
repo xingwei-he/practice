@@ -6,6 +6,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_31_Partition_Array",
+  srcs = [
+    "31_Partition_Array.cc",
+  ],
+)
+
+cc_binary (
   name = "lintcode_40_Implement_Queue_by_Two_Stacks",
   srcs = [
     "40_Implement_Queue_by_Two_Stacks.cc",

@@ -13,7 +13,7 @@ sys.setdefaultencoding("utf-8")
 # Date:2000-01-01
 #####################################
 
-def check_build(filename, begin, end):
+def check_build(filename, begin_pos, end_pos):
   fp = open(filename, "r")
   question_dict = dict()
   for line in fp:
@@ -27,16 +27,33 @@ def check_build(filename, begin, end):
       question_dict[question_num] = question_name
   accepted_list = list()
   todo_list = list()
+  begin = begin_pos
+  end = end_pos
   while begin <= end:
     if begin in question_dict.keys():
       accepted_list.append(begin)
     else:
       todo_list.append(begin)
     begin += 1
-  for i in todo_list:
-    if ((i - 1) % 5) == 0:
+  # information #
+  total_counter = len(accepted_list) + len(todo_list)
+  accepted_counter = len(accepted_list)
+  todo_counter = len(todo_list)
+  print "You are checking questions from", begin_pos, " to ", end_pos,"."
+  print "Total:", total_counter
+  print "Accepted:", accepted_counter, "\trate:", round((float(accepted_counter)/float(total_counter)) * 100, 2), "%"
+  print "Todo:", todo_counter, "\trate:", round((float(todo_counter)/float(total_counter)) * 100, 2), "%"
+
+  print "Todo List:"
+  i = begin_pos
+  while i <= end_pos:
+    if i in todo_list:
+      print i,"\t",
+    if i % 10 == 0:
       print ""
-    print i,"\t",
+    i += 1
+    
+
   print ""
   fp.close()
 
@@ -44,6 +61,8 @@ def main():
   build_filename = options.build_filename
   begin_index = options.question_number_begin
   end_index = options.question_number_end
+  print "Filename:", build_filename
+  print "check range:[", begin_index, ", ", end_index, "]" 
   check_build(build_filename, begin_index, end_index)
 
 if __name__ == "__main__":
