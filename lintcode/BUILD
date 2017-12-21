@@ -6,11 +6,25 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_28_Search_a_2D_Matrix",
+  srcs = [
+    "28_Search_a_2D_Matrix.cc",
+  ],
+)
+
+cc_binary (
   name = "lintcode_31_Partition_Array",
   srcs = [
     "31_Partition_Array.cc",
   ],
 )
+
+#cc_binary (
+#  name = "lintcode_32_Minimum_Window_Substring",
+#  srcs = [
+#    "32_Minimum_Window_Substring.cc",
+#  ],
+#)
 
 cc_binary (
   name = "lintcode_40_Implement_Queue_by_Two_Stacks",
