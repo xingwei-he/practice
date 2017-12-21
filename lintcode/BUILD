@@ -34,6 +34,20 @@ cc_binary (
 #)
 
 cc_binary (
+  name = "lintcode_35_Reverse_Linked_List",
+  srcs = [
+    "35_Reverse_Linked_List.cc",
+  ]
+)
+
+cc_binary (
+  name = "lintcode_36_Reverse_Linked_List_II",
+  srcs = [
+    "36_Reverse_Linked_List_II.cc",
+  ]
+)
+
+cc_binary (
   name = "lintcode_40_Implement_Queue_by_Two_Stacks",
   srcs = [
     "40_Implement_Queue_by_Two_Stacks.cc",
