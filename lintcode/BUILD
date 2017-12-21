@@ -13,6 +13,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_29_Interleaving_String",
+  srcs = [
+    "29_Interleaving_String.cc",
+  ],
+)
+
+cc_binary (
   name = "lintcode_31_Partition_Array",
   srcs = [
     "31_Partition_Array.cc",
