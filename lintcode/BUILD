@@ -55,6 +55,14 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_39_Recover_Rotated_Sorted_Array",
+  srcs = [
+    "39_Recover_Rotated_Sorted_Array.cc",
+  ],
+)
+
+
+cc_binary (
   name = "lintcode_40_Implement_Queue_by_Two_Stacks",
   srcs = [
     "40_Implement_Queue_by_Two_Stacks.cc",
