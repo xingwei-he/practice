@@ -48,6 +48,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_38_Search_a_2D_Matrix_II",
+  srcs = [
+    "38_Search_a_2D_Matrix_II.cc",
+  ],
+)
+
+cc_binary (
   name = "lintcode_40_Implement_Queue_by_Two_Stacks",
   srcs = [
     "40_Implement_Queue_by_Two_Stacks.cc",
