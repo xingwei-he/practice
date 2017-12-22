@@ -51,37 +51,56 @@ public:
     if (m == n) {
       return head;
     }
-    ListNode* left_head = new ListNode(-1);
-    ListNode* phead = left_head;
-    ListNode* ptail = phead;
-    for (int i = 0; i < m; i++) {
-      phead = phead->next;
-    }
-    for (int i = m; i < n; i++) {
-      ptail = ptail->next;
-    }
-    ListNode* left_tail = left_head;
-    while (left_tail->next != phead) {
+    // 创建临时头节点便于操作
+    ListNode* temp_head = new ListNode(-1);
+    temp_head->next = head;
+    // 用 left_tail 指向第 m-1 个节点
+    ListNode* left_tail = temp_head;
+    for (int i = 0; i < m - 1; i++) {
       left_tail = left_tail->next;
     }
+    // 用 cur_head 指向第 m 个节点
+    ListNode* cur_head = left_tail->next;
+    // 用 right_head 指向第 n+1 个节点
+    ListNode* right_head = cur_head;
+    for (int i = 0; i < n - m + 1; i++) {
+      right_head = right_head->next;
+    }
+    // 将 left_tail->next 指向 right_head
+    left_tail->next = right_head;
+    
     ListNode* p = nullptr;
-    ListNode* right_head = ptail->next;
-    while (p != right_head) {
-      p = phead;
-      phead = phead->next;
+    while (cur_head != right_head) {
+      p = cur_head;
+      cur_head = cur_head->next;
       p->next = left_tail->next;
       left_tail->next = p;
     }
-    while (nullptr != left_tail->next) {
-      left_tail = left_tail->next;
-    }
-    left_tail->next = right_head;
-    ListNode* temp = left_head->next;
-    delete left_head;
-    return temp;
+    p = temp_head->next;
+    delete temp_head;
+    return p;
   }
 };
 
 int main() {
+  ListNode* n1 = new ListNode(1);
+  ListNode* n2 = new ListNode(2);
+  ListNode* n3 = new ListNode(3);
+  ListNode* n4 = new ListNode(4);
+  ListNode* n5 = new ListNode(5);
+  ListNode* n6 = new ListNode(6);
+  n1->next = n2;
+  n2->next = n3;
+  n3->next = n4;
+  n4->next = n5;
+  n5->next = n6;
+
+  Solution sl;
+  ListNode* head = sl.reverseBetween(n1, 5, 6);
+  for (ListNode* p = head; p != nullptr; p = p->next) {
+    cout << p->val << "  ";
+  }
+  cout << endl;
+
   return 0;
 }
