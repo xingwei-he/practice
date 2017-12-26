@@ -104,7 +104,7 @@ public:
     }
   }
 
-  // 向上调整堆 - 小根堆
+  // 向上调整堆 - 大根堆
   void adjustUpMaxHeap(vector<int>& heap, int k) {
     int i = k;
     while (i > 0) {
