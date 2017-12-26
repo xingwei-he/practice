@@ -334,3 +334,10 @@ cc_binary (
     "697_Check_Sum_of_Square_Numbers.cc",
   ],
 )
+
+cc_binary (
+  name = "lintcode_720_Rearrange_a_String_With_Integers",
+  srcs = [
+    "720_Rearrange_a_String_With_Integers.cc",
+  ],
+)
