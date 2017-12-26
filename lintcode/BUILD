@@ -294,6 +294,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_433_Number_of_Islands",
+  srcs = [
+    "433_Number_of_Islands.cc",
+  ],
+)
+
+cc_binary (
   name = "lintcode_491_Palindrome_Number",
   srcs = [
     "491_Palindrome_Number.cc",
