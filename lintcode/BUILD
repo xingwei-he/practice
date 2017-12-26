@@ -327,3 +327,10 @@ cc_binary (
     "684_Missing_String.cc",
   ],
 )
+
+cc_binary (
+  name = "lintcode_697_Check_Sum_of_Square_Numbers",
+  srcs = [
+    "697_Check_Sum_of_Square_Numbers.cc",
+  ],
+)
