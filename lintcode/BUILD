@@ -336,6 +336,14 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_702_Concatenated_String_with_Uncommon_Characters_of_Two_Strings",
+  srcs = [
+    "702_Concatenated_String_with_Uncommon_Characters_of_Two_Strings.cc",
+  ],
+)
+
+
+cc_binary (
   name = "lintcode_720_Rearrange_a_String_With_Integers",
   srcs = [
     "720_Rearrange_a_String_With_Integers.cc",
