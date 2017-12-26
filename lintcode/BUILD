@@ -320,3 +320,10 @@ cc_binary (
     "680_Split_String.cc",
   ],
 )
+
+cc_binary (
+  name = "lintcode_684_Missing_String",
+  srcs = [
+    "684_Missing_String.cc",
+  ],
+)
