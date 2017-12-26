@@ -313,3 +313,10 @@ cc_binary (
     "678_Convert_Palindrome.cc",
   ],
 )
+
+cc_binary (
+  name = "lintcode_680_Split_String",
+  srcs = [
+    "680_Split_String.cc",
+  ],
+)
