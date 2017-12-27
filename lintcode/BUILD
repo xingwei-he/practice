@@ -322,6 +322,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_655_Big_Integer_Addition",
+  srcs = [
+    "655_Big_Integer_Addition.cc",
+  ],
+)
+
+cc_binary (
   name = "lintcode_678_Convert_Palindrome",
   srcs = [
     "678_Convert_Palindrome.cc",
