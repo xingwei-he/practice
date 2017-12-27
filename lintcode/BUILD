@@ -335,6 +335,12 @@ cc_binary (
   ],
 )
 
+cc_binary (
+  name = "lintcode_662_Guess_Number_Game",
+  srcs = [
+    "662_Guess_Number_Game.cc",
+  ],
+)
 
 cc_binary (
   name = "lintcode_678_Convert_Palindrome",
