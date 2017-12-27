@@ -329,6 +329,14 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_661_Convert_BST_to_Greater_Tree",
+  srcs = [
+    "661_Convert_BST_to_Greater_Tree.cc",
+  ],
+)
+
+
+cc_binary (
   name = "lintcode_678_Convert_Palindrome",
   srcs = [
     "678_Convert_Palindrome.cc",
