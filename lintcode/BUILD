@@ -315,6 +315,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_646_First_Position_Unique_Character",
+  srcs = [
+    "646_First_Position_Unique_Character.cc",
+  ],
+)
+
+cc_binary (
   name = "lintcode_678_Convert_Palindrome",
   srcs = [
     "678_Convert_Palindrome.cc",
