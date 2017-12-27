@@ -308,6 +308,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_638_Strings_Homomorphism",
+  srcs = [
+    "638_Strings_Homomorphism.cc",
+  ],
+)
+
+cc_binary (
   name = "lintcode_678_Convert_Palindrome",
   srcs = [
     "678_Convert_Palindrome.cc",
