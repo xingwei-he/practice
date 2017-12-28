@@ -27,6 +27,7 @@ public:
    * @param nums: A list of integers
    * @return: A list of integers includes the index of the first number and the index of the last number
    */
+  /* 方法1 暴力法
   vector<int> subarraySum(vector<int>& nums) {
     vector<int> pos;
     for (int i = 0; i < nums.size(); i++) {
@@ -38,6 +39,29 @@ public:
 	  pos.push_back(j);
 	  return pos;
 	}
+      }
+    }
+    return pos;
+  }
+  */
+  /* 方法2 */
+  // 用 map 的 key 表示从 0 到 i 的和，value 存存储 i，如果 sum 为 0 或者 map 中同一 key 下有不同索引值时则找到结果
+  vector<int> subarraySum(vector<int>& nums) {
+    vector<int> pos;
+    map<int, int> sum_map;
+    int sum = 0;
+    for (int i = 0; i < nums.size(); i++) {
+      sum += nums[i];
+      if (0 == sum) {
+	pos.push_back(0);
+	pos.push_back(i);
+	return pos;
+      } else if (sum_map.find(sum) != sum_map.end()) {
+	pos.push_back(sum_map[sum] + 1);
+	pos.push_back(i);
+	return pos;
+      } else {
+	sum_map.insert(pair<int, int>(sum, i));
       }
     }
     return pos;
