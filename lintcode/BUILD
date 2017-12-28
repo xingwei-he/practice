@@ -315,6 +315,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_158_Two_Strings_Are_Anagrams",
+  srcs = [
+    "158_Two_Strings_Are_Anagrams.cc",
+  ],
+)
+
+cc_binary (
   name = "lintcode_167_Add_Two_Numbers",
   srcs = [
     "167_Add_Two_Numbers.cc",
