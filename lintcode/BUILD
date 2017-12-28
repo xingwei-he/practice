@@ -287,6 +287,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_142_O_1_Check_Power_of_2",
+  srcs = [
+    "142_O_1_Check_Power_of_2.cc",
+  ],
+)
+
+cc_binary (
   name = "lintcode_167_Add_Two_Numbers",
   srcs = [
     "167_Add_Two_Numbers.cc",
