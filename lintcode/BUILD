@@ -280,6 +280,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_141_Sqrt_x",
+  srcs = [
+    "141_Sqrt_x.cc",
+  ],
+)
+
+cc_binary (
   name = "lintcode_167_Add_Two_Numbers",
   srcs = [
     "167_Add_Two_Numbers.cc",
