@@ -301,6 +301,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_156_Merge_Intervals",
+  srcs = [
+    "156_Merge_Intervals.cc",
+  ],
+)
+
+cc_binary (
   name = "lintcode_167_Add_Two_Numbers",
   srcs = [
     "167_Add_Two_Numbers.cc",
