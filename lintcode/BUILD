@@ -308,6 +308,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_157_Unique_Characters",
+  srcs = [
+    "157_Unique_Characters.cc",
+  ],
+)
+
+cc_binary (
   name = "lintcode_167_Add_Two_Numbers",
   srcs = [
     "167_Add_Two_Numbers.cc",
