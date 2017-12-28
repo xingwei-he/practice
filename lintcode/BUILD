@@ -273,6 +273,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_138_Subarray_Sum",
+  srcs = [
+    "138_Subarray_Sum.cc",
+  ],
+)
+
+cc_binary (
   name = "lintcode_167_Add_Two_Numbers",
   srcs = [
     "167_Add_Two_Numbers.cc",
