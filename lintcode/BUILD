@@ -294,6 +294,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_155_Minimum_Depth_of_Binary_Tree",
+  srcs = [
+    "155_Minimum_Depth_of_Binary_Tree.cc",
+  ],
+)
+
+cc_binary (
   name = "lintcode_167_Add_Two_Numbers",
   srcs = [
     "167_Add_Two_Numbers.cc",
