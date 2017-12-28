@@ -259,6 +259,13 @@ cc_binary (
 #)
 
 cc_binary (
+  name = "lintcode_133_Longest_Words",
+  srcs = [
+    "133_Longest_Words.cc",
+  ],
+)
+
+cc_binary (
   name = "lintcode_136_Palindrome_Partitioning",
   srcs = [
     "136_Palindrome_Partitioning.cc",
