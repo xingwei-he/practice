@@ -6,6 +6,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_6_Merge_Two_Sorted_Arrays",
+  srcs = [
+    "6_Merge_Two_Sorted_Arrays.cc",
+  ]
+)
+
+cc_binary (
   name = "lintcode_28_Search_a_2D_Matrix",
   srcs = [
     "28_Search_a_2D_Matrix.cc",
