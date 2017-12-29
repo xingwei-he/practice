@@ -20,6 +20,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_9_Fizz_Buzz",
+  srcs = [
+    "9_Fizz_Buzz.cc",
+  ]
+)
+
+cc_binary (
   name = "lintcode_28_Search_a_2D_Matrix",
   srcs = [
     "28_Search_a_2D_Matrix.cc",
