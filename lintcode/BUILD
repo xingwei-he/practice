@@ -13,6 +13,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_8_Rotate_String",
+  srcs = [
+    "8_Rotate_String.cc",
+  ]
+)
+
+cc_binary (
   name = "lintcode_28_Search_a_2D_Matrix",
   srcs = [
     "28_Search_a_2D_Matrix.cc",
