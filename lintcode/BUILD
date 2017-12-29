@@ -357,6 +357,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_496_Toy_Factory",
+  srcs = [
+    "496_Toy_Factory.cc",
+  ],
+)
+
+cc_binary (
   name = "lintcode_638_Strings_Homomorphism",
   srcs = [
     "638_Strings_Homomorphism.cc",
