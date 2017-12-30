@@ -9,6 +9,7 @@
 #define _BASE_H
 
 #include <iostream>
+#include <string>
 #include <iomanip>
 #include <algorithm>
 #include <vector>
@@ -20,6 +21,7 @@
 #include <unordered_set>
 #include <bitset>
 #include <cmath>
+#include <cstring>
 
 // Definition for singly-linked list.
 struct ListNode {

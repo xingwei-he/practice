@@ -161,6 +161,35 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_66_Binary_Tree_Preorder_Traversal",
+  srcs = [
+    "66_Binary_Tree_Preorder_Traversal.cc",
+  ],
+)
+
+cc_binary (
+  name = "lintcode_67_Binary_Tree_Inorder_Traversal",
+  srcs = [
+    "67_Binary_Tree_Inorder_Traversal.cc",
+  ],
+)
+
+
+cc_binary (
+  name = "lintcode_68_Binary_Tree_Postorder_Traversal",
+  srcs = [
+    "68_Binary_Tree_Postorder_Traversal.cc",
+  ],
+)
+
+cc_binary (
+  name = "lintcode_69_Binary_Tree_Level_Order_Traversal",
+  srcs = [
+    "69_Binary_Tree_Level_Order_Traversal.cc",
+  ],
+)
+
+cc_binary (
   name = "lintcode_70_Binary_Tree_Level_Order_Traversal_II",
   srcs = [
     "70_Binary_Tree_Level_Order_Traversal_II.cc",
