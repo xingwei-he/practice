@@ -344,6 +344,12 @@ cc_binary (
   ],
 )
 
+cc_binary (
+  name = "lintcode_112_Remove_Duplicates_from_Sorted_List",
+  srcs = [
+    "112_Remove_Duplicates_from_Sorted_List.cc",
+  ],
+)
 
 #cc_binary (
 #  name = "lintcode_132_Word_Search_II",
