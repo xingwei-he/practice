@@ -268,6 +268,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_97_Maximum_Depth_of_Binary_Tree",
+  srcs = [
+    "97_Maximum_Depth_of_Binary_Tree.cc",
+  ],
+)
+
+cc_binary (
   name = "lintcode_98_Sort_List",
   srcs = [
     "98_Sort_List.cc",
