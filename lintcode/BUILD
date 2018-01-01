@@ -253,6 +253,14 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_93_Balanced_Binary_Tree",
+  srcs = [
+    "93_Balanced_Binary_Tree.cc",
+  ],
+)
+
+
+cc_binary (
   name = "lintcode_96_Partition_List",
   srcs = [
     "96_Partition_List.cc",
