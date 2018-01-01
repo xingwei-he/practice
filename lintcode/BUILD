@@ -296,6 +296,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_101_Remove_Duplicates_from_Sorted_Array_II",
+  srcs = [
+    "101_Remove_Duplicates_from_Sorted_Array_II.cc",
+  ],
+)
+
+cc_binary (
   name = "lintcode_102_Linked_List_Cycle",
   srcs = [
     "102_Linked_List_Cycle.cc",
