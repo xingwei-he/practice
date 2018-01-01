@@ -358,6 +358,13 @@ cc_binary (
   ],
 )
 
+cc_binary (
+  name = "lintcode_115_Unique_Paths_II",
+  srcs = [
+    "115_Unique_Paths_II.cc",
+  ],
+)
+
 #cc_binary (
 #  name = "lintcode_132_Word_Search_II",
 #  srcs = [
