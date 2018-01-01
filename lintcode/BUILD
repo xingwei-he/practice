@@ -330,6 +330,13 @@ cc_binary (
   ],
 )
 
+cc_binary (
+  name = "lintcode_110_Minimum_Path_Sum",
+  srcs = [
+    "110_Minimum_Path_Sum.cc",
+  ],
+)
+
 #cc_binary (
 #  name = "lintcode_132_Word_Search_II",
 #  srcs = [
