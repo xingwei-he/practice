@@ -337,6 +337,14 @@ cc_binary (
   ],
 )
 
+cc_binary (
+  name = "lintcode_111_Climbing_Stairs",
+  srcs = [
+    "111_Climbing_Stairs.cc",
+  ],
+)
+
+
 #cc_binary (
 #  name = "lintcode_132_Word_Search_II",
 #  srcs = [
