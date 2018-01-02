@@ -39,7 +39,7 @@ public:
    * @param obstacleGrid: A list of lists of integers
    * @return: An integer
    */
-  int uniquePathsWithObstacles(vector<vector<int>> &obstacleGrid) {
+  int uniquePathsWithObstacles(vector<vector<int> > &obstacleGrid) {
     if (obstacleGrid.size() == 0) {
       return 0;
     }
