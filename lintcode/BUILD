@@ -464,6 +464,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_185_Matrix_Zigzag_Traversal",
+  srcs = [
+    "185_Matrix_Zigzag_Traversal.cc",
+  ],
+)
+
+cc_binary (
   name = "lintcode_221_Add_Two_Numbers_II",
   srcs = [
     "221_Add_Two_Numbers_II.cc",
