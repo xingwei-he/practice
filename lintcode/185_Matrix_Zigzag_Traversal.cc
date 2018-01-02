@@ -77,5 +77,18 @@ public:
 };
 
 int main() {
+  int row_0[] = {1,2,3};
+  int row_1[] = {4,5,6};
+  int row_2[] = {7,8,9};
+  vector<vector<int> > matrix;
+  matrix.push_back(vector<int>(row_0, row_0 + sizeof(row_0)/sizeof(int)));
+  matrix.push_back(vector<int>(row_1, row_1 + sizeof(row_1)/sizeof(int)));
+  matrix.push_back(vector<int>(row_2, row_2 + sizeof(row_2)/sizeof(int)));
+  Solution sl;
+  vector<int> res = sl.printZMatrix(matrix);
+  for (int i = 0; i < res.size(); i++) {
+    cout << res[i] << "  ";
+  }
+  cout << endl;
   return 0;
 }
