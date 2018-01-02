@@ -450,6 +450,14 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_175_Invert_Binary_Tree",
+  srcs = [
+    "175_Invert_Binary_Tree.cc",
+  ],
+)
+
+
+cc_binary (
   name = "lintcode_221_Add_Two_Numbers_II",
   srcs = [
     "221_Add_Two_Numbers_II.cc",
