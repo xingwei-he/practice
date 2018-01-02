@@ -365,13 +365,6 @@ cc_binary (
   ],
 )
 
-#cc_binary (
-#  name = "lintcode_132_Word_Search_II",
-#  srcs = [
-#    "132_Word_Search_II.cc",
-#  ]
-#)
-
 cc_binary (
   name = "lintcode_133_Longest_Words",
   srcs = [
@@ -439,6 +432,13 @@ cc_binary (
   name = "lintcode_167_Add_Two_Numbers",
   srcs = [
     "167_Add_Two_Numbers.cc",
+  ],
+)
+
+cc_binary (
+  name = "lintcode_172_Remove_Element",
+  srcs = [
+    "172_Remove_Element.cc",
   ],
 )
 
