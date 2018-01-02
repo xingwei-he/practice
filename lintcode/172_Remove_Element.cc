@@ -60,7 +60,7 @@ public:
 
 int main() {
   int arr[] = {1,2,8,3,8,8,8,4,5,8,8,6};
-  vector<int> nums(arr, arr + sizeof(arr)/sizeof(int));
+  vector<int> nums(arr, arr + sizeof(arr) / sizeof(int));
   cout << "nums:" << endl;
   for (int i = 0; i < nums.size(); i++) {
     cout << nums[i] << "  ";
