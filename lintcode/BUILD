@@ -456,6 +456,12 @@ cc_binary (
   ],
 )
 
+cc_binary (
+  name = "lintcode_181_Flip_Bits",
+  srcs = [
+    "181_Flip_Bits.cc",
+  ],
+)
 
 cc_binary (
   name = "lintcode_221_Add_Two_Numbers_II",
