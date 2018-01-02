@@ -443,6 +443,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_174_Remove_Nth_Node_From_End_of_List",
+  srcs = [
+    "174_Remove_Nth_Node_From_End_of_List.cc",
+  ],
+)
+
+cc_binary (
   name = "lintcode_221_Add_Two_Numbers_II",
   srcs = [
     "221_Add_Two_Numbers_II.cc",
