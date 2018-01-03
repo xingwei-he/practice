@@ -429,6 +429,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_165_Merge_Two_Sorted_Lists",
+  srcs = [
+    "165_Merge_Two_Sorted_Lists.cc",
+  ],
+)
+
+cc_binary (
   name = "lintcode_167_Add_Two_Numbers",
   srcs = [
     "167_Add_Two_Numbers.cc",
