@@ -74,12 +74,11 @@ public:
     } else if (nullptr == T1) {
       return false;
     }
-    //return isSameTree(T1, T2) || isSameTree(T1->left, T2) || isSameTree(T1->right, T2);
-    bool s1 = isSameTree(T1, T2);
-    bool s2 = isSameTree(T1->left, T2);
-    bool s3 = isSameTree(T1->right, T2);
-    cout << boolalpha << s1 << "\t" << s2 << "\t" << s3 << endl;
-    return s1 || s2 || s3;
+    if (isSameTree(T1, T2)) {
+      return true;
+    } else {
+      return isSubtree(T1->left, T2) || isSubtree(T1->right, T2);
+    }
   }
 };
 
