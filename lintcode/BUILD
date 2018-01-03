@@ -513,6 +513,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_365_Count_1_in_Binary",
+  srcs = [
+    "365_Count_1_in_Binary.cc",
+  ],
+)
+
+cc_binary (
   name = "lintcode_423_Valid_Parentheses",
   srcs = [
     "423_Valid_Parentheses.cc",
