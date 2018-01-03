@@ -436,6 +436,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_166_Nth_to_Last_Node_in_List",
+  srcs = [
+    "166_Nth_to_Last_Node_in_List.cc",
+  ],
+)
+
+cc_binary (
   name = "lintcode_167_Add_Two_Numbers",
   srcs = [
     "167_Add_Two_Numbers.cc",
@@ -516,6 +523,13 @@ cc_binary (
   name = "lintcode_365_Count_1_in_Binary",
   srcs = [
     "365_Count_1_in_Binary.cc",
+  ],
+)
+
+cc_binary (
+  name = "lintcode_372_Delete_Node_in_the_Middle_of_Singly_Linked_List",
+  srcs = [
+    "372_Delete_Node_in_the_Middle_of_Singly_Linked_List.cc",
   ],
 )
 
