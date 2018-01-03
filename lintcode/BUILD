@@ -548,6 +548,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_376_Binary_Tree_Path_Sum",
+  srcs = [
+    "376_Binary_Tree_Path_Sum.cc",
+  ],
+)
+
+cc_binary (
   name = "lintcode_423_Valid_Parentheses",
   srcs = [
     "423_Valid_Parentheses.cc",
