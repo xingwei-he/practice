@@ -541,6 +541,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_375_Clone_Binary_Tree",
+  srcs = [
+    "375_Clone_Binary_Tree.cc",
+  ],
+)
+
+cc_binary (
   name = "lintcode_423_Valid_Parentheses",
   srcs = [
     "423_Valid_Parentheses.cc",
