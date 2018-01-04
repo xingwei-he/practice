@@ -548,13 +548,6 @@ cc_binary (
 )
 
 cc_binary (
-  name = "lintcode_376_Binary_Tree_Path_Sum",
-  srcs = [
-    "376_Binary_Tree_Path_Sum.cc",
-  ],
-)
-
-cc_binary (
   name = "lintcode_389_Valid_Sudoku",
   srcs = [
     "389_Valid_Sudoku.cc",
