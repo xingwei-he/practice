@@ -583,6 +583,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_415_Valid_Palindrome",
+  srcs = [
+    "415_Valid_Palindrome.cc",
+  ],
+)
+
+cc_binary (
   name = "lintcode_423_Valid_Parentheses",
   srcs = [
     "423_Valid_Parentheses.cc",
