@@ -38,26 +38,14 @@ public:
       string temp;
       int j = 0;
       while (j < s.size()) {
-	int counter = 0;
-	for (int k = j; k < s.size(); k++) {
-	  if (s[j] == s[k]) {
-	    counter++;
-	    if (k == s.size() - 1) {
-	      temp.push_back(counter + '0');
-	      temp.push_back(s[j]);
-	      j = k;
-	      break;
-	    }
-	  } else {
-	    temp.push_back(counter + '0');
-	    temp.push_back(s[j]);
-	    j = k;
-	    continue;
-	  }
+	int k = j;
+	while (k < s.size() && s[j] == s[k]) {
+	  k++;
 	}
-	j++;
+	temp.push_back(k - j + '0');
+	temp.push_back(s[j]);
+	j = k;
       }
-      cout << temp << "\t*" << endl;
       s = temp;
     }
     return s;
