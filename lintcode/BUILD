@@ -590,6 +590,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_420_Count_and_Say",
+  srcs = [
+    "420_Count_and_Say.cc",
+  ],
+)
+
+cc_binary (
   name = "lintcode_423_Valid_Parentheses",
   srcs = [
     "423_Valid_Parentheses.cc",
