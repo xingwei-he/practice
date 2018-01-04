@@ -569,6 +569,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_407_Plus_One",
+  srcs = [
+    "407_Plus_One.cc",
+  ],
+)
+
+cc_binary (
   name = "lintcode_423_Valid_Parentheses",
   srcs = [
     "423_Valid_Parentheses.cc",
