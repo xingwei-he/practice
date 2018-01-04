@@ -555,6 +555,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_389_Valid_Sudoku",
+  srcs = [
+    "389_Valid_Sudoku.cc",
+  ],
+)
+
+cc_binary (
   name = "lintcode_423_Valid_Parentheses",
   srcs = [
     "423_Valid_Parentheses.cc",
