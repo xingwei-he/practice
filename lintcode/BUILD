@@ -562,6 +562,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_397_Longest_Increasing_Continuous_Subsequence",
+  srcs = [
+    "397_Longest_Increasing_Continuous_Subsequence.cc",
+  ],
+)
+
+cc_binary (
   name = "lintcode_423_Valid_Parentheses",
   srcs = [
     "423_Valid_Parentheses.cc",
