@@ -646,6 +646,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_469_Identical_Binary_Tree",
+  srcs = [
+    "469_Identical_Binary_Tree.cc",
+  ],
+)
+
+cc_binary (
   name = "lintcode_491_Palindrome_Number",
   srcs = [
     "491_Palindrome_Number.cc",
