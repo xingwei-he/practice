@@ -625,6 +625,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_453_Flatten_Binary_Tree_to_Linked_List",
+  srcs = [
+    "453_Flatten_Binary_Tree_to_Linked_List.cc",
+  ],
+)
+
+cc_binary (
   name = "lintcode_491_Palindrome_Number",
   srcs = [
     "491_Palindrome_Number.cc",
