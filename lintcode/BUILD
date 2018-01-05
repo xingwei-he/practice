@@ -681,6 +681,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_517_Ugly_Number",
+  srcs = [
+    "517_Ugly_Number.cc",
+  ],
+)
+
+cc_binary (
   name = "lintcode_638_Strings_Homomorphism",
   srcs = [
     "638_Strings_Homomorphism.cc",
