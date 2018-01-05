@@ -632,6 +632,20 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_457_Classical_Binary_Search",
+  srcs = [
+    "457_Classical_Binary_Search.cc",
+  ],
+)
+
+cc_binary (
+  name = "lintcode_464_Sort_Integers_II",
+  srcs = [
+    "464_Sort_Integers_II.cc",
+  ],
+)
+
+cc_binary (
   name = "lintcode_491_Palindrome_Number",
   srcs = [
     "491_Palindrome_Number.cc",
