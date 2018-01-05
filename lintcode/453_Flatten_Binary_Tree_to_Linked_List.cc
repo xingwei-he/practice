@@ -45,13 +45,13 @@ using namespace std;
  * }
  */
 
-/* 方法一 借助一个 vector 保存 preOrder，再遍历这个 vector 重构单链表 */
 class Solution {
 public:
   /*
    * @param root: a TreeNode, the root of the binary tree
    * @return: 
    */
+/* 方法一 借助一个 vector 保存 preOrder，再遍历这个 vector 重构单链表
   void flatten(TreeNode * root) {
     if (nullptr == root) {
       return;
@@ -77,8 +77,35 @@ public:
       node_vec[i - 1]->right = node_vec[i];
     }
   }
+  */
+
+  /* 方法二 遍历同时进行操作 */
+  void flatten(TreeNode* root) {
+    TreeNode* cur = root;
+    while (nullptr != cur){
+      if (nullptr != cur->left){
+	TreeNode* pre = cur->left;
+	while (nullptr != pre->right){
+	  pre = pre->right;
+	}
+	//将当前节点的右孩子连接到当前节点左孩子的的最右孩子  
+	pre->right = cur->right;
+	//当前节点的左孩子变为右孩子，左孩子置为NULL  
+	cur->right = cur->left;
+	cur->left = NULL;
+      }
+      cur = cur->right;
+    }
+  }
 };
 
 int main() {
+  TreeNode* root = new TreeNode(1);
+  Solution sl;
+  sl.flatten(root);
+  for (TreeNode* p = root; p != nullptr; p = p->right) {
+    cout << p->val << "  ";
+  }
+  cout << endl;
   return 0;
 }
