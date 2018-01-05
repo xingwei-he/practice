@@ -660,6 +660,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_488_Happy_Number",
+  srcs = [
+    "488_Happy_Number.cc",
+  ],
+)
+
+cc_binary (
   name = "lintcode_491_Palindrome_Number",
   srcs = [
     "491_Palindrome_Number.cc",
