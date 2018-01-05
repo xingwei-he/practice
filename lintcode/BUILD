@@ -688,6 +688,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_524_Left_Pad",
+  srcs = [
+    "524_Left_Pad.cc",
+  ],
+)
+
+cc_binary (
   name = "lintcode_638_Strings_Homomorphism",
   srcs = [
     "638_Strings_Homomorphism.cc",
