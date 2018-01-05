@@ -597,6 +597,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_422_Length_of_Last_Word",
+  srcs = [
+    "422_Length_of_Last_Word.cc",
+  ],
+)
+
+cc_binary (
   name = "lintcode_423_Valid_Parentheses",
   srcs = [
     "423_Valid_Parentheses.cc",
@@ -607,6 +614,13 @@ cc_binary (
   name = "lintcode_433_Number_of_Islands",
   srcs = [
     "433_Number_of_Islands.cc",
+  ],
+)
+
+cc_binary (
+  name = "lintcode_451_Swap_Nodes_in_Pairs",
+  srcs = [
+    "451_Swap_Nodes_in_Pairs.cc",
   ],
 )
 
