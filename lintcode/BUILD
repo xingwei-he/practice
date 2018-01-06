@@ -716,6 +716,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_569_Add_Digits",
+  srcs = [
+    "569_Add_Digits.cc",
+  ],
+)
+
+cc_binary (
   name = "lintcode_638_Strings_Homomorphism",
   srcs = [
     "638_Strings_Homomorphism.cc",
