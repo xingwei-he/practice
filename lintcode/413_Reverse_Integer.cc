@@ -27,7 +27,7 @@ public:
    */
   int reverseInteger(int n) {
     int MAX_SIGNED_INT = numeric_limits<int>::max();
-    int MIN_SIGNED_INT = numeric_limits<int>::min();
+    //int MIN_SIGNED_INT = numeric_limits<int>::min();
     bool is_pos = true;
     if (n < 0) {
       is_pos = false;
@@ -39,7 +39,6 @@ public:
       n = n / 10;
       q.push(temp);
     }
-    int i = 0;
     int res = 0;
     while (!q.empty()) {
       if ((double)MAX_SIGNED_INT / 10.0 > res) {
