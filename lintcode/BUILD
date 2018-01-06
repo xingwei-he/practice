@@ -709,6 +709,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_548_Intersection_of_Two_Arrays_II",
+  srcs = [
+    "548_Intersection_of_Two_Arrays_II.cc",
+  ],
+)
+
+cc_binary (
   name = "lintcode_638_Strings_Homomorphism",
   srcs = [
     "638_Strings_Homomorphism.cc",
