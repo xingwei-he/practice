@@ -596,12 +596,12 @@ cc_binary (
   ],
 )
 
-cc_binary (
-  name = "lintcode_422_Length_of_Last_Word",
-  srcs = [
-    "422_Length_of_Last_Word.cc",
-  ],
-)
+#cc_binary (
+#  name = "lintcode_422_Length_of_Last_Word",
+#  srcs = [
+#    "422_Length_of_Last_Word.cc",
+#  ],
+#)
 
 cc_binary (
   name = "lintcode_423_Valid_Parentheses",
@@ -691,6 +691,13 @@ cc_binary (
   name = "lintcode_524_Left_Pad",
   srcs = [
     "524_Left_Pad.cc",
+  ],
+)
+
+cc_binary (
+  name = "lintcode_539_Move_Zeroes",
+  srcs = [
+    "539_Move_Zeroes.cc",
   ],
 )
 
