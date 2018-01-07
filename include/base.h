@@ -12,6 +12,7 @@
 #include <string>
 #include <iomanip>
 #include <algorithm>
+#include <list>
 #include <vector>
 #include <stack>
 #include <queue>
