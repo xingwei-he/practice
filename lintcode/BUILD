@@ -13,6 +13,20 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_4_Ugly_Number_II",
+  srcs = [
+    "4_Ugly_Number_II.cc",
+  ]
+)
+
+cc_binary (
+  name = "lintcode_5_Kth_Largest_Element",
+  srcs = [
+    "5_Kth_Largest_Element.cc",
+  ]
+)
+
+cc_binary (
   name = "lintcode_6_Merge_Two_Sorted_Arrays",
   srcs = [
     "6_Merge_Two_Sorted_Arrays.cc",
