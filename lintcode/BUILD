@@ -6,6 +6,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_3_Digit_Counts",
+  srcs = [
+    "3_Digit_Counts.cc",
+  ]
+)
+
+cc_binary (
   name = "lintcode_6_Merge_Two_Sorted_Arrays",
   srcs = [
     "6_Merge_Two_Sorted_Arrays.cc",
