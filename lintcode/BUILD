@@ -48,6 +48,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_11_Search_Range_in_Binary_Search_Tree",
+  srcs = [
+    "11_Search_Range_in_Binary_Search_Tree.cc",
+  ]
+)
+
+cc_binary (
   name = "lintcode_13_strStr",
   srcs = [
     "13_strStr.cc",
