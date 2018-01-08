@@ -62,6 +62,14 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_15_Permutations",
+  srcs = [
+    "15_Permutations.cc",
+  ]
+)
+
+
+cc_binary (
   name = "lintcode_28_Search_a_2D_Matrix",
   srcs = [
     "28_Search_a_2D_Matrix.cc",
