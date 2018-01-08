@@ -12,12 +12,12 @@ cc_binary (
   ]
 )
 
-cc_binary (
-  name = "lintcode_4_Ugly_Number_II",
-  srcs = [
-    "4_Ugly_Number_II.cc",
-  ]
-)
+#cc_binary (
+#  name = "lintcode_4_Ugly_Number_II",
+#  srcs = [
+#    "4_Ugly_Number_II.cc",
+#  ]
+#)
 
 cc_binary (
   name = "lintcode_5_Kth_Largest_Element",
@@ -624,12 +624,12 @@ cc_binary (
   ],
 )
 
-#cc_binary (
-#  name = "lintcode_422_Length_of_Last_Word",
-#  srcs = [
-#    "422_Length_of_Last_Word.cc",
-#  ],
-#)
+cc_binary (
+  name = "lintcode_422_Length_of_Last_Word",
+  srcs = [
+    "422_Length_of_Last_Word.cc",
+  ],
+)
 
 cc_binary (
   name = "lintcode_423_Valid_Parentheses",
