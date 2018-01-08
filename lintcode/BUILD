@@ -182,6 +182,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_63_Search_in_Rotated_Sorted_Array_II",
+  srcs = [
+    "63_Search_in_Rotated_Sorted_Array_II.cc",
+  ],
+)
+
+cc_binary (
   name = "lintcode_64_Merge_Sorted_Array",
   srcs = [
     "64_Merge_Sorted_Array.cc",
