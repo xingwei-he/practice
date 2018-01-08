@@ -36,6 +36,7 @@ public:
     int left = 0;
     int right = A.size() - 1;
     int mid = 0;
+    // 利用一次二分查找分界点，即序列中最小值点找出来
     while (A[left] >= A[right]) {
       mid = (left + right) / 2;
       cout << "mid:" << mid << "  val:" << A[mid] << endl;
@@ -86,4 +87,3 @@ int main() {
   cout << res << endl;
   return 0;
 }
-
