@@ -26,7 +26,6 @@ public:
    * @return: The total number of distinct solutions.
    */
   int totalNQueens(int n) {
-
   }
 };
 
