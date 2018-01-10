@@ -58,7 +58,7 @@ public:
   // 递归放置皇后
   void placeQueen(vector<string>& board, vector<vector<string> >& res, int row, int col) {
     int n = board.size();
-    // 超过棋牌范围
+    // 超过棋盘范围
     if (row == n || col == n) {
       return;
     }
