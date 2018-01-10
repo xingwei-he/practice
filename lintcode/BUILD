@@ -98,6 +98,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_34_N-Queens_II",
+  srcs = [
+    "34_N-Queens_II.cc",
+  ],
+)
+
+cc_binary (
   name = "lintcode_35_Reverse_Linked_List",
   srcs = [
     "35_Reverse_Linked_List.cc",
