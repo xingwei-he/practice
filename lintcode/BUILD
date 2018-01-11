@@ -479,6 +479,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_151_Best_Time_to_Buy_and_Sell_Stock_III",
+  srcs = [
+    "151_Best_Time_to_Buy_and_Sell_Stock_III.cc",
+  ],
+)
+
+cc_binary (
   name = "lintcode_155_Minimum_Depth_of_Binary_Tree",
   srcs = [
     "155_Minimum_Depth_of_Binary_Tree.cc",
