@@ -395,6 +395,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_107_Word_Break",
+  srcs = [
+    "107_Word_Break.cc",
+  ],
+)
+
+cc_binary (
   name = "lintcode_110_Minimum_Path_Sum",
   srcs = [
     "110_Minimum_Path_Sum.cc",
