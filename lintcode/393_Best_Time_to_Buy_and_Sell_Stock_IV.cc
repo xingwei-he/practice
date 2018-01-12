@@ -76,6 +76,12 @@ int main() {
   int arr[] = {4,4,6,1,1,4,2,5};
   int k = 2;
   vector<int> prices(arr, arr + sizeof(arr)/sizeof(int));
+  cout << "k:" << k << endl;
+  cout << "given prices:" << endl;
+  for (int i = 0; i < prices.size(); i++) {
+    cout << setw(4) << prices[i];
+  }
+  cout << endl;
   Solution sl;
   int max_profit = sl.maxProfit(k, prices);
   cout << "max_profit:" << max_profit << endl;
