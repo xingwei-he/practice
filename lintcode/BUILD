@@ -640,6 +640,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_393_Best_Time_to_Buy_and_Sell_Stock_IV",
+  srcs = [
+    "393_Best_Time_to_Buy_and_Sell_Stock_IV.cc",
+  ],
+)
+
+cc_binary (
   name = "lintcode_397_Longest_Increasing_Continuous_Subsequence",
   srcs = [
     "397_Longest_Increasing_Continuous_Subsequence.cc",
