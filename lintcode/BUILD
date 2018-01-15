@@ -155,6 +155,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_46_Majority_Number",
+  srcs = [
+    "46_Majority_Number.cc",
+  ]
+)
+
+cc_binary (
   name = "lintcode_51_Previous_Permutation",
   srcs = [
     "51_Previous_Permutation.cc",
