@@ -27,6 +27,8 @@ public:
    * @param nums: a list of integers
    * @return: find a  majority number
    */
+  /*
+  // O(n) time and O(n) extra space
   int majorityNumber(vector<int> &nums) {
     unordered_map<int, int> counter_map;
     int n = nums.size();
@@ -46,6 +48,26 @@ public:
     if (max_occurence > n / 2) {
       return max_number;
     }
+  }
+  */
+
+  // O(n) time and O(1) extra space
+  int majorityNumber(vector<int> &nums) {
+    int candidate;
+    int counter = 0;
+    for (int i = 0; i < nums.size(); i++) {
+      if (0 == counter) {
+	candidate = nums[i];
+	counter++;
+      } else {
+	if (candidate == nums[i]) {
+	  counter++;
+	} else {
+	  counter--;
+	}
+      }
+    }
+    return candidate;
   }
 };
 
