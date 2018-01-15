@@ -29,6 +29,8 @@ public:
    * @param nums: A list of integers
    * @return: An integer denotes the sum of max two non-overlapping subarrays
    */
+  /*
+  // Time Limit Exceeded
   int maxSubArray(vector<int>& nums) {
     if (nums.size() == 0) {
       return 0;
@@ -61,6 +63,41 @@ public:
       }
     }
     return max_sum;
+  }
+  */
+
+  int maxTwoSubArrays(vector<int> &nums) {
+    if (nums.size() == 0) {
+      return 0;
+    }
+    int INT_MIN_LIMIT = numeric_limits<int>::min();
+    int result = INT_MIN_LIMIT;
+    int n = nums.size();
+    vector<int> maxLeft(n + 1, INT_MIN_LIMIT);
+    vector<int> maxRight(n + 1, INT_MIN_LIMIT);
+    vector<int> profit(n + 1, 0);	            
+    vector<int> sum(n + 1, 0);    
+    for (int i = 1; i <= n; i++) {
+      sum[i] = sum[i - 1] + nums[i - 1];
+    }    
+    maxLeft[0] = INT_MIN_LIMIT;
+    for (int i = 1, valley = 0; i < sum.size(); i++) {
+      maxLeft[i] = max(maxLeft[i - 1], sum[i] - valley);
+      valley = min(valley, sum[i]);
+    }
+    for (int i = n, peak = sum[n]; i > 0; i--) {
+      if (i == n) {
+	maxRight[i] = peak - sum[i - 1];
+      } else {
+	maxRight[i]= max(maxRight[i + 1], peak - sum[i - 1]);
+      }
+      peak = max(peak, sum[i - 1]);
+    }
+    for (int i = 1; i < n; i++) {
+      profit[i] = maxLeft[i] + maxRight[i + 1];
+      result = max(result, profit[i]);
+    }
+    return result;
   }
 };
 
