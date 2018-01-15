@@ -22,6 +22,13 @@ using namespace std;
  * Given [3,1,2,3,2,3,3,4,4,4] and k=3, return 3.
  */
 
+class Candidate{
+public:
+  int val;
+  int count;
+  Candidate(int x = 0, int y = 0): val(x), count(y){}
+};
+
 class Solution {
 public:
   /*
@@ -29,6 +36,8 @@ public:
    * @param k: An integer
    * @return: The majority number
    */
+  /*
+  // O(n) time and O(n) extra space
   int majorityNumber(vector<int> &nums, int k) {
     unordered_map<int, int> counter_map;
     int n = nums.size();
@@ -48,6 +57,49 @@ public:
     if (max_occurence > n / k) {
       return max_number;
     }
+  }
+  */
+
+  // O(n) time and O(1) extra space
+  int majorityNumber(vector<int> nums, int k) {
+    if(nums.size() == 0) return -1;
+    int n = nums.size();
+    vector<Candidate> m(k - 1, Candidate() );
+    for(int i = 0; i < n; i++){
+      int l;
+      for(l = 0; l < k - 1; l++){
+        if(m[l].val == nums[i]){
+          m[l].count++;
+	  break;
+	}
+      }
+      if(l == k - 1){
+	for(l = 0; l < k - 1; l++){
+	  if(m[l].count == 0){
+          m[l].val = nums[i];
+	  m[l].count++;
+	  break;
+	  }
+	}
+	if(l == k - 1){
+	  for(l = 0; l < k - 1; l++){
+	    m[l].count--;
+	  }
+	}
+      }
+    }
+    for(int j = 0; j < k - 1; j++){
+      m[j].count = 0;
+    }
+    for(int i = 0; i < n; i++){
+      for(int j = 0; j < k - 1; j++){
+	if(nums[i] == m[j].val){
+	  m[j].count++;
+	}
+	if(m[j].count > n / k) return m[j].val;
+      }
+    }
+    return -1;
   }
 };
 
