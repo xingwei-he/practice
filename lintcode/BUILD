@@ -162,6 +162,20 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_47_Majority_Number_II",
+  srcs = [
+    "47_Majority_Number_II.cc",
+  ]
+)
+
+cc_binary (
+  name = "lintcode_48_Majority_Number_III",
+  srcs = [
+    "48_Majority_Number_III.cc",
+  ]
+)
+
+cc_binary (
   name = "lintcode_51_Previous_Permutation",
   srcs = [
     "51_Previous_Permutation.cc",
