@@ -28,6 +28,8 @@ public:
    * @param nums: a list of integers
    * @return: The majority number that occurs more than 1/3
    */
+  /*
+  // O(n) time and O(n) extra space
   int majorityNumber(vector<int> &nums) {
     unordered_map<int, int> counter_map;
     int n = nums.size();
@@ -47,6 +49,38 @@ public:
     if (max_occurence > n / 3) {
       return max_number;
     }
+  }
+  */
+
+  // O(n) time and O(1) extra space
+  int majorityNumber(vector<int> nums) {
+    int candidate1, candidate2;
+    int count1 = 0, count2 = 0;
+    for (int i = 0; i < nums.size(); i++) {
+      if (candidate1 == nums[i]) {
+	count1 ++;
+      } else if (candidate2 == nums[i]) {
+	count2 ++;
+      } else if (count1 == 0) {
+	candidate1 = nums[i];
+	count1 = 1;
+      } else if (count2 == 0) {
+	candidate2 = nums[i];
+	count2 = 1;
+      } else {
+	count1--;
+	count2--;
+      }
+    }
+    count1 = count2 = 0;
+    for (int i = 0; i < nums.size(); i++) {
+      if (nums[i] == candidate1) {
+	count1++;
+      } else if (nums[i] == candidate2) {
+	count2++;
+      }
+    }
+    return count1 > count2 ? candidate1 : candidate2;
   }
 };
 
