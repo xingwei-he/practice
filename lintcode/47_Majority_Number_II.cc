@@ -85,5 +85,10 @@ public:
 };
 
 int main() {
+  int arr[] = {1, 2, 2, 2, 1, 3, 3, 3, 2, 1, 3, 3};
+  vector<int> nums(arr, arr + sizeof(arr)/sizeof(int));
+  Solution sl;
+  int n = sl.majorityNumber(nums);
+  cout << "majority_number:" << n << endl;
   return 0;
 }
