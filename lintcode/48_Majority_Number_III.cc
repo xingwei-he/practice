@@ -24,9 +24,9 @@ using namespace std;
 
 class Candidate{
 public:
-  int val;
+  int value;
   int count;
-  Candidate(int x = 0, int y = 0): val(x), count(y){}
+  Candidate(int v = 0, int c = 0) : value(v), count(c){}
 };
 
 class Solution {
@@ -62,41 +62,45 @@ public:
 
   // O(n) time and O(1) extra space
   int majorityNumber(vector<int> nums, int k) {
-    if(nums.size() == 0) return -1;
+    if(nums.size() == 0) {
+      return -1;
+    }
     int n = nums.size();
-    vector<Candidate> m(k - 1, Candidate() );
-    for(int i = 0; i < n; i++){
+    vector<Candidate> candidates(k - 1, Candidate());
+    for (int i = 0; i < n; i++) {
       int l;
-      for(l = 0; l < k - 1; l++){
-        if(m[l].val == nums[i]){
-          m[l].count++;
+      for (l = 0; l < k - 1; l++) {
+        if (candidates[l].value == nums[i]) {
+          candidates[l].count++;
 	  break;
 	}
       }
-      if(l == k - 1){
-	for(l = 0; l < k - 1; l++){
-	  if(m[l].count == 0){
-          m[l].val = nums[i];
-	  m[l].count++;
-	  break;
+      if (l == k - 1) {// 如果candidates中找不到nums[i]，则找到一个count为0的位置作用nums[i]填充，如果没有空位则将所有candidates的count减1（注意此时有可能会出现count为0的空位置了）
+	for (l = 0; l < k - 1; l++) {
+	  if (candidates[l].count == 0) {
+	    candidates[l].value = nums[i];
+	    candidates[l].count++;
+	    break;
 	  }
 	}
-	if(l == k - 1){
-	  for(l = 0; l < k - 1; l++){
-	    m[l].count--;
+	if (l == k - 1) {
+	  for (l = 0; l < k - 1; l++) {
+	    candidates[l].count--;
 	  }
 	}
       }
     }
-    for(int j = 0; j < k - 1; j++){
-      m[j].count = 0;
+    for (int j = 0; j < k - 1; j++) {
+      candidates[j].count = 0;
     }
-    for(int i = 0; i < n; i++){
-      for(int j = 0; j < k - 1; j++){
-	if(nums[i] == m[j].val){
-	  m[j].count++;
+    for (int i = 0; i < n; i++) {// 遍历nums
+      for (int j = 0; j < k - 1; j++) {// 遍历candidates
+	if (nums[i] == candidates[j].value) {
+	  candidates[j].count++;
 	}
-	if(m[j].count > n / k) return m[j].val;
+	if (candidates[j].count > n / k) {
+	  return candidates[j].value;
+	}
       }
     }
     return -1;
@@ -104,5 +108,12 @@ public:
 };
 
 int main() {
+  //int arr[] = {3,1,2,3,2,3,3,4,4,4};
+  int arr[] = {1,2,3,4,5};
+  int k = 3;
+  vector<int> nums(arr, arr + sizeof(arr)/sizeof(int));
+  Solution sl;
+  int n = sl.majorityNumber(nums, k);
+  cout << "majority_number:" << n << endl;
   return 0;
 }
