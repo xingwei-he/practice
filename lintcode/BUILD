@@ -274,6 +274,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_65_Median_of_two_Sorted_Arrays",
+  srcs = [
+    "65_Median_of_two_Sorted_Arrays.cc",
+  ],
+)
+
+cc_binary (
   name = "lintcode_66_Binary_Tree_Preorder_Traversal",
   srcs = [
     "66_Binary_Tree_Preorder_Traversal.cc",
