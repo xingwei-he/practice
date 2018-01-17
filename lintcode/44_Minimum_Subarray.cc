@@ -47,6 +47,7 @@ int main() {
   int arr[] = {1,-1,-2,1};
   vector<int> nums(arr, arr + sizeof(arr)/sizeof(int));
   Solution sl;
-  cout << sl.minSubArray(nums) << endl;
+  int min = sl.minSubArray(nums);
+  cout << min << endl;
   return 0;
 }
