@@ -26,7 +26,7 @@ public:
    * @return: Maximum profit
    */
   int maxProfit(vector<int> &prices) {
-    if (prices.size() <= 1) {
+    if (prices.size() <= 1) {
       return 0;
     }
     int profit = 0;
