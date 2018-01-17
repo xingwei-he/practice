@@ -54,7 +54,7 @@ public:
 
   // O(n) time and O(1) extra space
   int majorityNumber(vector<int> nums) {
-    int candidate1, candidate2;
+    int candidate1 = INT_MIN, candidate2 = INT_MIN;
     int count1 = 0, count2 = 0;
     for (int i = 0; i < nums.size(); i++) {
       if (candidate1 == nums[i]) {
