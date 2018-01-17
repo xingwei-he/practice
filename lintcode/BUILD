@@ -197,6 +197,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_50_Product_of_Array_Exclude_Itself",
+  srcs = [
+    "50_Product_of_Array_Exclude_Itself.cc",
+  ]
+)
+
+cc_binary (
   name = "lintcode_51_Previous_Permutation",
   srcs = [
     "51_Previous_Permutation.cc",
