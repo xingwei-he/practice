@@ -162,6 +162,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_44_Minimum_Subarray",
+  srcs = [
+    "44_Minimum_Subarray.cc",
+  ]
+)
+
+cc_binary (
   name = "lintcode_47_Majority_Number_II",
   srcs = [
     "47_Majority_Number_II.cc",
@@ -172,6 +179,13 @@ cc_binary (
   name = "lintcode_48_Majority_Number_III",
   srcs = [
     "48_Majority_Number_III.cc",
+  ]
+)
+
+cc_binary (
+  name = "lintcode_49_Sort_Letters_by_Case",
+  srcs = [
+    "49_Sort_Letters_by_Case.cc",
   ]
 )
 
