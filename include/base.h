@@ -23,6 +23,7 @@
 #include <bitset>
 #include <cmath>
 #include <cstring>
+#include <climits>
 
 // Definition for singly-linked list.
 struct ListNode {
