@@ -155,16 +155,23 @@ cc_binary (
 )
 
 cc_binary (
-  name = "lintcode_46_Majority_Number",
+  name = "lintcode_44_Minimum_Subarray",
   srcs = [
-    "46_Majority_Number.cc",
+    "44_Minimum_Subarray.cc",
   ]
 )
 
 cc_binary (
-  name = "lintcode_44_Minimum_Subarray",
+  name = "lintcode_45_Maximum_Subarray_Difference",
   srcs = [
-    "44_Minimum_Subarray.cc",
+    "45_Maximum_Subarray_Difference.cc",
+  ]
+)
+
+cc_binary (
+  name = "lintcode_46_Majority_Number",
+  srcs = [
+    "46_Majority_Number.cc",
   ]
 )
 
