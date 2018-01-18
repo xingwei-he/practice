@@ -563,6 +563,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_152_Combinations",
+  srcs = [
+    "152_Combinations.cc",
+  ],
+)
+
+cc_binary (
   name = "lintcode_155_Minimum_Depth_of_Binary_Tree",
   srcs = [
     "155_Minimum_Depth_of_Binary_Tree.cc",
