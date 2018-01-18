@@ -345,6 +345,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_79_Longest_Common_Substring",
+  srcs = [
+    "79_Longest_Common_Substring.cc",
+  ],
+)
+
+cc_binary (
   name = "lintcode_80_Median",
   srcs = [
     "80_Median.cc",
