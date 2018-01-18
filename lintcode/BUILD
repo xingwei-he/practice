@@ -331,6 +331,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_77_Longest_Common_Subsequence",
+  srcs = [
+    "77_Longest_Common_Subsequence.cc",
+  ],
+)
+
+cc_binary (
   name = "lintcode_78_Longest_Common_Prefix",
   srcs = [
     "78_Longest_Common_Prefix.cc",
