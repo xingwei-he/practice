@@ -16,9 +16,9 @@ using namespace std;
  *   
  * return its bottom-up level order traversal as:
  * [
- *    [15,7],
- *    [9,20],
- *    [3]
+ *   [15,7],
+ *   [9,20],
+ *   [3]
  * ]
  */
 
