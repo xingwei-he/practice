@@ -60,7 +60,7 @@ public:
     q.push(ptr);
     while (!q.empty()) {
       vector<int> cur_level;
-      int counter = q.size();
+      int counter = q.size();// 记录下当时队列的 size 即为本层的节点数
       for (int i = 0; i < counter; i++) {
 	ptr = q.front();
 	q.pop();
