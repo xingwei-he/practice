@@ -114,6 +114,7 @@ public:
       p1 = p1->next;
       p2 = p2->next->next;
     }
+    // 其实，p1 所指的是中间节点的前一个节点
     return p1;
   }
 
@@ -152,8 +153,8 @@ public:
       return head;
     }
     ListNode* mid = getMidNode(head);
-    ListNode* sorted_right_head = sortList(mid->next);
-    mid->next = nullptr;
+    ListNode* sorted_right_head = sortList(mid->next);// mid 指向的是中间节点的前一个节点，所以传进来的参数是 mid->next
+    mid->next = nullptr;// 断链
     ListNode* sorted_left_head = sortList(head);
     return mergeSortedList(sorted_left_head, sorted_right_head);
   }
