@@ -472,6 +472,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_108_Palindrome_Partitioning_II",
+  srcs = [
+    "108_Palindrome_Partitioning_II.cc",
+  ],
+)
+
+cc_binary (
   name = "lintcode_110_Minimum_Path_Sum",
   srcs = [
     "110_Minimum_Path_Sum.cc",
