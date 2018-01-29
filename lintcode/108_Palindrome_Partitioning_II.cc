@@ -29,7 +29,7 @@ public:
   int minCut(string s) {
     int n = s.size();
     vector<vector<int> > dp(n, vector<int>(n, 0));
-    // min_cut[i] 表示第 i 个字符到最后一个字符所构成的子串的最小分割次数
+    // min_cut[i] 表示第 i 个字符到最后一个字符所构成的子串的最小分割次数，初始值都为 -1
     vector<int> min_cut(n + 1, -1);
     for (int i = n - 1; i >= 0; i--) {// 从右下角开始填
       min_cut[i] = INT_MAX;
