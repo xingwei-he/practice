@@ -91,6 +91,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_32_Minimum_Window_Substring",
+  srcs = [
+    "32_Minimum_Window_Substring.cc",
+  ],
+)
+
+cc_binary (
   name = "lintcode_33_N-Queens",
   srcs = [
     "33_N-Queens.cc",
