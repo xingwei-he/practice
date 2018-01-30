@@ -7,10 +7,10 @@
  ***************************************************/
 #include <iostream>
 
-using namespace std;
-
 #include "bitree.h"
 #include "bitree_processor.h"
+
+using namespace std;
 
 int main() {
   BiTree bitree;
