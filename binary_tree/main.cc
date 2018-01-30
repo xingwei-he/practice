@@ -115,6 +115,23 @@ int main() {
   int max_distance = bitree_processor.getMaxDistance(root, left_depth, right_depth);
   cout << "max_distance:" << max_distance << "\tleft_depth:" << left_depth << "\tright_depth:" << right_depth << endl;
 
-
+  // 11. 由前序遍历和中序遍历构建二叉树
+  //cout << "11. 由前序遍历和中序遍历构建二叉树" <<  endl;
+  string preorderStr = "12465378";
+  string inorderStr = "46251387";
+  cout << "preorder:" << preorderStr << endl;
+  cout << "inrorder:" << inorderStr << endl;
+  cout << "rebuilding..." << endl;
+  TreeNode* r = bitree_processor.rebuildBiTreeByPreorderAndInorder(preorderStr, inorderStr);
+  cout << "preorder:";
+  bitree_processor.preOrder(r);
+  cout << endl;
+  cout << "inorder:";
+  bitree_processor.inOrder(r);
+  cout << endl;
+  cout << "postorder:";
+  bitree_processor.postOrder(r);
+  cout << endl;
+  
   return 0;
 }

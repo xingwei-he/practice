@@ -57,7 +57,7 @@ public:
   int getMaxDistance(TreeNode* root, int& left_depth, int& right_depth);
 
   // 11. 由前序遍历和中序遍历构建二叉树
-  void rebuildBiTreeByPreOrderAndInOrder(TreeNode* root, std::string preorder, std::string inorder);
+  TreeNode* rebuildBiTreeByPreorderAndInorder(std::string preorder, std::string inorder);
 
   // 12. 判断二叉树是不是完全二叉树
   bool isCompleteBiTree(TreeNode* root);

@@ -356,3 +356,20 @@ int BiTreeProcessor::getMaxDistance(
   }
   return max(max(left_max_distance, right_max_distance), left_depth + right_depth);
 }
+
+// 11. 由前序遍历和中序遍历构建二叉树
+
+TreeNode* BiTreeProcessor::rebuildBiTreeByPreorderAndInorder(string preorderStr, string inorderStr) {
+  if (preorderStr.size() == 0 || inorderStr.size() == 0 || preorderStr.size() != inorderStr.size()) {
+    return nullptr;
+  }
+  TreeNode* root = new TreeNode(preorderStr[0] - '0');
+  int pos = inorderStr.find(preorderStr[0]);
+  string left_preorder_str = preorderStr.substr(1, pos);
+  string right_preorder_str = preorderStr.substr(pos + 1, preorderStr.size() - pos - 1);
+  string left_inorder_str = inorderStr.substr(0, pos);
+  string right_inorder_str = inorderStr.substr(pos + 1, inorderStr.size() - pos - 1);
+  root->left = rebuildBiTreeByPreorderAndInorder(left_preorder_str, left_inorder_str);
+  root->right = rebuildBiTreeByPreorderAndInorder(right_preorder_str, right_inorder_str);
+  return root;
+}
