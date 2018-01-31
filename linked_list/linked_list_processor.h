@@ -22,7 +22,7 @@ public:
   ListNode* reverseList(ListNode* head);
 
   // 3. 查找单链表中的倒数第 K 个节点（K > 0）
-  ListNode* getKthNode(ListNode* head, unsigned int k);
+  ListNode* getKthNodeFromTail(ListNode* head, unsigned int k);
 
   // 4. 查找单链表的中间节点
   ListNode* getMiddleNode(ListNode* head);
@@ -32,6 +32,15 @@ public:
 
   // 6. 合并两个有序链表成一个有序链表
   ListNode* mergeSortedList(ListNode* l1, ListNode* l2);
+
+  // 7. 判断链表中是否有环
+  bool hasCircle(ListNode* head);
+  
+  // 8. 判断两个链表是否相交
+  bool isIntersected(ListNode* l1, ListNode* l2);
+
+  // 9. 求两个单链表相交的第一个节点
+  ListNode* getFirstCommonNode(ListNode* l1, ListNode* l2);
 };
 
 #endif

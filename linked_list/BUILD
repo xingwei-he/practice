@@ -12,9 +12,13 @@ cc_library (
   ],
 )
 
-cc_library (
+cc_binary (
   name = "main",
   srcs = [
     "main.cc",
+  ],
+  deps = [
+    ":linked_list",
+    ":linked_list_processor",
   ],
 )

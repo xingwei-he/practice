@@ -29,6 +29,38 @@ ListNode* LinkedList::getCommonLinkedList() {
   return head;
 }
 
+/**
+ * 2 -> 3 - 6 - 7 - 9
+ *          ->
+ */
+
+ListNode* LinkedList::getAnotherCommonLinkedList() {
+  ListNode* head = new ListNode(2);
+  head->next = new ListNode(3);
+  head->next->next = new ListNode(6);
+  head->next->next->next = new ListNode(7);
+  head->next->next->next->next = new ListNode(9);
+  return head;
+}
+
+/**
+ * 1 - 2 - 3 - 7 - 8
+ *     ->      |  
+ *         5 - 6 
+ *         ->   
+ */
+void LinkedList::getIntersectedLinkedLists(
+    ListNode*& l1, ListNode*& l2) {
+  l1 = new ListNode(1);
+  l1->next = new ListNode(2);
+  l1->next->next = new ListNode(3);
+  l1->next->next->next = new ListNode(7);
+  l1->next->next->next->next = new ListNode(8);
+  l2 = new ListNode(5);
+  l2->next = new ListNode(6);
+  l2->next->next = l1->next->next->next;
+}
+
 /**              
  *                <-
  *             9 - 8 - 7 

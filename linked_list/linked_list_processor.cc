@@ -49,14 +49,19 @@ ListNode* LinkedListProcessor::reverseList(ListNode* head) {
 
 // 3. 查找单链表中的倒数第 K 个节点（K > 0）
 
-ListNode* LinkedListProcessor::getKthNode(ListNode* head, unsigned int k) {
-  if (0 == k || nullptr != head) {
+ListNode* LinkedListProcessor::getKthNodeFromTail(ListNode* head, unsigned int k) {
+  if (0 == k || nullptr == head) {
     return nullptr;
   }
   ListNode* p1 = head;
   ListNode* p2 = head;
-  for (int i = 0; i < k; i++) {
+  int len = 0;
+  for (int i = 0; i < k && nullptr != p2; i++) {
+    len++;
     p2 = p2->next;
+  }
+  if (len < k) {
+    return nullptr;
   }
   while (nullptr != p2) {
     p1 = p1->next;
@@ -73,7 +78,7 @@ ListNode* LinkedListProcessor::getMiddleNode(ListNode* head) {
 
   ListNode* p1 = head;
   ListNode* p2 = head;
-  while (nullptr != p2->next || nullptr != p2->next->next) {
+  while (nullptr != p2->next && nullptr != p2->next->next) {
     p1 = p1->next;
     p2 = p2->next->next;
   }
@@ -89,16 +94,18 @@ void LinkedListProcessor::reversePrintList(ListNode* head) {
   ListNode* p = head;
   while (nullptr != p) {
     st.push(p);
+    p = p->next;
   }
   while (!st.empty()) {
     p = st.top();
     st.pop();
     cout << setw(4) << p->val;
   }
+  cout << endl;
 }
 
 // 6. 合并两个有序链表成一个有序链表
-ListNode* mergeSortedList(ListNode* l1, ListNode* l2) {
+ListNode* LinkedListProcessor::mergeSortedList(ListNode* l1, ListNode* l2) {
   if (nullptr == l1) {
     return l2;
   }
@@ -111,12 +118,12 @@ ListNode* mergeSortedList(ListNode* l1, ListNode* l2) {
   ListNode* phead = nullptr;
   if (p1->val < p2->val) {
     p = p1;
-    p->next = nullptr;
     p1 = p1->next;
+    p->next = nullptr;
   } else {
     p = p2;
-    p->next = nullptr;
     p2 = p2->next;
+    p->next = nullptr;
   }
   phead = p;
   while (nullptr != p1 && nullptr != p2) {
@@ -139,4 +146,84 @@ ListNode* mergeSortedList(ListNode* l1, ListNode* l2) {
     p->next = p1;
   }
   return phead;
+}
+
+
+// 7. 判断链表中是否有环
+bool LinkedListProcessor::hasCircle(ListNode* head) {
+  if (nullptr == head) {
+    return false;
+  }
+  ListNode* p1 = head;
+  ListNode* p2 = head;
+  bool has_circle = false;
+  while (nullptr != p2->next && nullptr != p2->next->next) {
+    p1 = p1->next;
+    p2 = p2->next->next;
+    if (p1 == p2) {
+      has_circle = true;
+      break;
+    }
+  }
+  return has_circle;
+}
+
+// 8. 判断两个链表是否相交
+bool LinkedListProcessor::isIntersected(ListNode* l1, ListNode* l2) {
+  if (nullptr == l1 || nullptr == l2) {
+    return false;
+  }
+  int len1 = getListLength(l1);
+  int len2 = getListLength(l2);
+  ListNode* p1 = l1;
+  ListNode* p2 = l2;
+  if (len1 > len2) {
+    for (int i = 0; i < (len1 - len2); i++) {
+      p1 = p1->next;
+    }
+  } else {
+    for (int i = 0; i < (len2 - len1); i++) {
+      p2 = p2->next;
+    }
+  }
+  bool is_intersected = false;
+  while (nullptr != p1 && nullptr != p2) {
+    if (p1 == p2) {
+      is_intersected = true;
+      break;
+    }
+    p1 = p1->next;
+    p2 = p2->next;
+  }
+  return is_intersected;
+}
+
+// 9. 求两个单链表相交的第一个节点
+ListNode* LinkedListProcessor::getFirstCommonNode(ListNode* l1, ListNode* l2) {
+  if (nullptr == l1 || nullptr == l2) {
+    return nullptr;
+  }
+  int len1 = getListLength(l1);
+  int len2 = getListLength(l2);
+  ListNode* p1 = l1;
+  ListNode* p2 = l2;
+  if (len1 > len2) {
+    for (int i = 0; i < (len1 - len2); i++) {
+      p1 = p1->next;
+    }
+  } else {
+    for (int i = 0; i < (len2 - len1); i++) {
+      p2 = p2->next;
+    }
+  }
+  ListNode* res = nullptr;
+  while (nullptr != p1 && nullptr != p2) {
+    if (p1 == p2) {
+      res = p1;
+      break;
+    }
+    p1 = p1->next;
+    p2 = p2->next;
+  }
+  return res;
 }

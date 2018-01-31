@@ -16,6 +16,8 @@ public:
   ~LinkedList();
 
   ListNode* getCommonLinkedList();
+  ListNode* getAnotherCommonLinkedList();
+  void getIntersectedLinkedLists(ListNode*& l1, ListNode*& l2);
   ListNode* getRingLinkedList();
 };
 
