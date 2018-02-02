@@ -102,5 +102,16 @@ int main() {
   ListNode* first_common_node = linked_list_processor.getFirstCommonNode(l1, l2);// l1 和 l2 经过上一步操作已经相交
   cout << "first common node:" << first_common_node->val << endl;
 
+  // 10. 已知一个单链表中存在环，求进入环中的第一个节点
+
+  // 11. 给出一单链表头指针pHead和一节点指针pToBeDeleted，O(1)时间复杂度删除节点pToBeDeleted
+  cout << "11. 给出一单链表头指针pHead和一节点指针pToBeDeleted，O(1)时间复杂度删除节点pToBeDeleted" << endl;
+  ListNode* temp_list = linked_list.getCommonLinkedList();
+  cout << "原链表\t";
+  printList(temp_list);
+  linked_list_processor.deleteNode(temp_list_1, temp_list->next->next->next);
+  cout << "删除节点后\t";
+  printList(temp_list);
+
   return 0;
 }

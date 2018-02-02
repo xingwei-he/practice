@@ -227,3 +227,33 @@ ListNode* LinkedListProcessor::getFirstCommonNode(ListNode* l1, ListNode* l2) {
   }
   return res;
 }
+
+// 10. 已知一个单链表中存在环，求进入环中的第一个节点
+
+// 11. 给出一单链表头指针pHead和一节点指针pToBeDeleted，O(1)时间复杂度删除节点pToBeDeleted
+void LinkedListProcessor::deleteNode(ListNode* head, ListNode* p_del) {
+  if (nullptr == head || nullptr == p_del) {
+    return;
+  }
+  ListNode* p_next = p_del->next;
+  if (nullptr != p_next) {
+    p_del->val = p_next->val;
+    p_del->next = p_next->next;
+    delete p_next;
+    p_next = nullptr;
+  } else {
+    ListNode* p_pre = head;
+    if (p_pre == p_del) {
+      delete p_del;
+      head = nullptr;
+      return;
+    } else {
+      while (p_pre->next != p_del) {
+	p_pre = p_pre->next;
+      }
+      p_pre->next = p_del->next;
+      delete p_del;
+      p_del = nullptr;
+    }
+  }
+}
