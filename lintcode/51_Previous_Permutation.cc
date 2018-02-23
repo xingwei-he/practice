@@ -49,7 +49,7 @@ public:
     if (pos < 0) {
       reverse(res.begin(), res.end());
     } else {
-      int k = pos + 2;// k 指向的是右侧的增序列中第一个比 pos 位置大的元素
+      int k = pos + 2;// k 指向的是右侧的递增序列中第一个大于等于 nums[pos] 的元素的前一个元素
       while (nums[pos] > nums[k] && k < res.size()) {
 	k++;
       }
@@ -64,7 +64,7 @@ public:
       res[pos] ^= res[k];
       res[k] ^= res[pos];
       res[pos] ^= res[k];
-
+      // 将 pos 后的元素翻转
       reverse(res.begin() + pos + 1, res.end());
     }
     return res;

@@ -668,6 +668,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_190_Next_Permutation_II",
+  srcs = [
+    "190_Next_Permutation_II.cc",
+  ],
+)
+
+cc_binary (
   name = "lintcode_197_Permutation_Index",
   srcs = [
     "197_Permutation_Index.cc",
@@ -727,6 +734,13 @@ cc_binary (
   name = "lintcode_375_Clone_Binary_Tree",
   srcs = [
     "375_Clone_Binary_Tree.cc",
+  ],
+)
+
+cc_binary (
+  name = "lintcode_388_Permutation_Sequence",
+  srcs = [
+    "388_Permutation_Sequence.cc",
   ],
 )
 
