@@ -29,15 +29,6 @@ public:
    * @param prices: An integer array
    * @return: Maximum profit
    */
-  void printMatrix(vector<vector<int> > matrix) {
-    for (int i = 0; i < matrix.size(); i++) {
-      for (int j = 0; j < matrix[i].size(); j++) {
-	cout << setw(4) << matrix[i][j];
-      }
-      cout << endl;
-    }
-    cout << endl;
-  }
   int maxProfit(int K, vector<int> &prices) {
     if (0 == K || prices.size() < 2) {
       return 0;
@@ -45,12 +36,6 @@ public:
     if (K > prices.size() / 2) {
       return maxProfitOfSolutionII(prices);
     }
-    // hold[i][j]: 对于0~i天中最多进行j次交易并且第i天仍然持有股票的收益
-    // unhold[i][j]: 对于0~i天中最多进行j次交易并且第i天不持有股票的收益
-    // 第i天持有股票的收益为 之前买了股票但还没有卖出 或者 今天才选择买入股票 二者中较大值
-    // hold[i][j] = max(unhold[i-1][j]-prices[j],hold[i][j-1]);
-    // 第i天不持有股票的收益为 选择今天卖出 或者 今天不买入时 最大的收益
-    // unhold[i][j] = max(hold[i][j-1]+prices[j],unhold[i][j-1]);
     /**
      * hold[i][j] 截止到第 j 天最多进行 i 次交易并且第 j 天仍持有股票时的收益
      * unhold[i][j] 截止到第 j 天最多进行 i 次交易并且第 j 天不持有股票时的收益
@@ -70,11 +55,6 @@ public:
 	unhold[i][j] = (hold[i][j - 1] + prices[j]) > unhold[i][j - 1] ? (hold[i][j - 1] + prices[j]) : unhold[i][j - 1];
       }
     }
-    cout << "hold --->" << endl;
-    printMatrix(hold);
-    cout << "********" << endl;
-    cout << "unhold --->" << endl;
-    printMatrix(unhold);
     return unhold[K][prices.size() - 1];
   }
 
@@ -97,7 +77,7 @@ public:
 int main() {
   // Given prices = [4,4,6,1,1,4,2,5], and k = 2, return 6
   int arr[] = {4,4,6,1,1,4,2,5};
-  int k = 1;
+  int k = 3;
   vector<int> prices(arr, arr + sizeof(arr)/sizeof(int));
   cout << "k:" << k << endl;
   cout << "given prices:" << endl;
