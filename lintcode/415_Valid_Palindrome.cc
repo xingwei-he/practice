@@ -19,8 +19,8 @@ using namespace std;
  *   For the purpose of this problem, we define empty string as valid palindrome.
  *
  * Example
- * "A man, a plan, a canal: Panama" is a palindrome.
- * "race a car" is not a palindrome.
+ *   "A man, a plan, a canal: Panama" is a palindrome.
+ *   "race a car" is not a palindrome.
  */
 
 class Solution {
@@ -48,7 +48,7 @@ public:
       while (left < right && !isAlphanumericChar(s[right])) {
 	right--;
       }
-    if (s[left] == s[right] || s[left] + 32 == s[right] || s[left] - 32 == s[right]) {
+      if (s[left] == s[right] || s[left] + 32 == s[right] || s[left] - 32 == s[right]) {
 	left++;
 	right--;
       } else {
