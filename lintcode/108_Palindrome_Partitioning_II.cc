@@ -28,14 +28,16 @@ public:
    */
   int minCut(string s) {
     int n = s.size();
+    // dp[i][j] 表示 s[i~j] 是一个回文串
     vector<vector<int> > dp(n, vector<int>(n, 0));
     // min_cut[i] 表示第 i 个字符到最后一个字符所构成的子串的最小分割次数，初始值都为 -1
     vector<int> min_cut(n + 1, -1);
-    for (int i = n - 1; i >= 0; i--) {// 从右下角开始填
+    for (int i = n - 1; i >= 0; i--) {// 从右下角开始填dp
       min_cut[i] = INT_MAX;
       for (int j = i; j < n; j++) {
 	if (s[i] == s[j] && (j - i <= 1 || dp[i + 1][j - 1]) == 1) {
 	  dp[i][j] = 1;
+	  // 填写 min_cut，由于 s[i~j] 是个回文串，则填入 1 + min_cut[j + 1] 和 之前填入的 min_cut[i] 的较小值
 	  min_cut[i] = min(1 + min_cut[j + 1], min_cut[i]);
 	}
       }
