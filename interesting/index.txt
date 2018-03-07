@@ -1,0 +1,2 @@
+1. KMP算法  kmp.cc  /kmp/KMP/字符串匹配/
+2. 删除字符构造回文串 delete_chars_tobe_palindrome.cc /回文串/palindrome/腾讯/
