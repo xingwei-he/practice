@@ -217,7 +217,8 @@ void BiTreeProcessor::getMirrorImage(TreeNode* root) {
 }
 
 // 9. 获取二叉树两个节点的最低公共祖先
-/*
+
+/* 方法1 */
 bool BiTreeProcessor::nodeInBiTree(TreeNode* root, TreeNode* n) {
   if (nullptr == root || nullptr == n) {
     return false;
@@ -234,27 +235,6 @@ bool BiTreeProcessor::nodeInBiTree(TreeNode* root, TreeNode* n) {
     }
     return has;
   }
-}
-*/
-/*
-bool BiTreeProcessor::getNodePath(TreeNode* root, TreeNode* pn, vector<TreeNode*>& path) {
-  if (nullptr == root || nullptr == pn) {
-    return false;
-  }
-  if (root == pn) {
-    path.push_back(root);
-    return true;
-  }
-  bool found = false;
-  path.push_back(root);
-  found = getNodePath(root->left, pn, path);
-  if (!found) {
-    found = getNodePath(root->right, pn, path);
-  }
-  if (!found) {
-    path.pop_back();
-  }
-  return found;
 }
 
 TreeNode* BiTreeProcessor::getLowestCommonAncestorRecursively(
@@ -280,9 +260,8 @@ TreeNode* BiTreeProcessor::getLowestCommonAncestorRecursively(
   }
   return nullptr;
 }
-*/
-// 9. 获取二叉树中两节点的最低公共祖先
 
+/* 方法2 */
 bool BiTreeProcessor::getNodePath(TreeNode* root, TreeNode* pn, vector<TreeNode*>& path) {
   if (nullptr == root) {
     return false;

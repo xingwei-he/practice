@@ -106,8 +106,11 @@ int main() {
   TreeNode* n1 = root->right->left->right;
   TreeNode* n2 = root->right->right;
   cout << "n1:" << n1->val << "\tn2:" << n2->val << endl;
-  TreeNode* lca = bitree_processor.getLowestCommonAncestor(root, n1, n2);
-  cout << "Lowest Common Ancestor's value is " << lca->val << endl;
+  TreeNode* lca = nullptr;
+  lca = bitree_processor.getLowestCommonAncestorRecursively(root, n1, n2);
+  cout << "method 1\nLowest Common Ancestor's value is " << lca->val << endl;
+  lca = bitree_processor.getLowestCommonAncestor(root, n1, n2);
+  cout << "method 2\nLowest Common Ancestor's value is " << lca->val << endl;
   
   // 10. 获取二叉树中节点的最远距离
   cout << "10. 获取二叉树中节点的最远距离" << endl;

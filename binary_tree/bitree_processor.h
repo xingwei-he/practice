@@ -48,8 +48,8 @@ public:
   void getMirrorImage(TreeNode* root);
 
   // 9. 获取二叉树两个节点的最低公共祖先
-  //bool nodeInBiTree(TreeNode* root, TreeNode* pn);
-  //TreeNode* getLowestCommonAncestorRecursively(TreeNode* root, TreeNode* pn1, TreeNode* pn2);
+  bool nodeInBiTree(TreeNode* root, TreeNode* pn);
+  TreeNode* getLowestCommonAncestorRecursively(TreeNode* root, TreeNode* pn1, TreeNode* pn2);
   bool getNodePath(TreeNode* root, TreeNode* pn, std::vector<TreeNode*>& path);
   TreeNode* getLowestCommonAncestor(TreeNode* root, TreeNode* n1, TreeNode* n2);
 
