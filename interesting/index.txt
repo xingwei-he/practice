@@ -5,4 +5,4 @@
 5. 扎金花 golden_flower.cc  /扎金花/搜狐/souhu/
 6. 回文串 lintcode:108/136/415/491/678	/回文串/palindrome/
 7. 添加一个字符构成回文串 add_one_char_tobe_palindrome.cc /回文串/palindrome/蘑菇街/
-8. 最长递增子序列 
+8. 最长递增子序列 lintcode:76 /最长递增子序列/完美世界/
