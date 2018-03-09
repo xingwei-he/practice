@@ -66,15 +66,18 @@ public:
     if (nums.size() <= 0) {
       return 0;
     }
-    // notebook[i] 记录长度为 i 的最小结尾值
+    // notebook[i] 记录长度为 i 的最小结尾值，因此，这必然是一个递增序列·
+    // 注意位置 0 的值就是初始值 -1 不会改变
     vector<int> notebook(nums.size() + 1, -1);
     notebook[1] = nums[0];
-    int notebook_len = 1;
+    int notebook_len = 1;// 记录 LIS 的长度，也就是 notebook 的真实长度（不包含 0 位置）
     for (int i = 0; i < nums.size(); i++) {
       int left = 1;
       int right = notebook_len;
       int mid = 0;
       // 二分查找在 notebook 中第一个大于 nums[i] 的元素
+      // 如果能找到一个大于 nums[i] 的元素那么 right 就指向它
+      // 否则，right 指向的是 notebook 中最后一个元素（无论是否大于nums[i]）
       while (left < right) {
 	mid = (left + right) / 2;
 	if (nums[i] >= notebook[mid]) {
@@ -84,9 +87,12 @@ public:
 	}
       }
 
+      // 判断是否找到第一个大于 nums[i] 的位置
       if (notebook[right] > nums[i] && notebook[right - 1] < nums[i]) {
+	// 如果找到，则 notebook[right] 用 nums[i] 替换
 	notebook[right] = nums[i];
       } else if (notebook[right] < nums[i]) {
+	// 如果没找到，则说明 nums[i] 可以放在当前的 LIS 后面构成一个长度 +1 的新的 LIS
 	notebook[right + 1] = nums[i];
 	notebook_len++;
       }
@@ -96,11 +102,11 @@ public:
 };
 
 int main() {
-  //int arr[] = {4, 2, 4, 5, 3, 7};
+  int arr[] = {4, 2, 4, 5, 3, 7};
   //int arr[] = {88,4,24,82,86,1,56,74,71,9,8,18,26,53,77,87,60,27,69,17,76,23,67,14,98,13,10,83,20,43,39,29,92,31,0,30,90,70,37,59};
   //int arr[] = {88,4,24,82,86,1,56,74,71,9,8,18};
-  //vector<int> nums(begin(arr), end(arr));
-  vector<int> nums(0);
+  vector<int> nums(begin(arr), end(arr));
+  //vector<int> nums(0);
   for (int i = 0; i < nums.size(); i++) {
     cout << setw(4) << nums[i]; 
   }
