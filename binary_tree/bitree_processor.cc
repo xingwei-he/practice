@@ -94,7 +94,7 @@ void BiTreeProcessor::postOrder(TreeNode* root) {
   node_stack.push(p);
   while (!node_stack.empty()) {
     p = node_stack.top();
-    // 当前节点是子节点或刚才访问过当前节点的子节点（如果有两个子节点或只有一个右子节点，则pre指向右子节点，如果只有左子节点，则pre指向左子节点）
+    // 当前节点是叶节点或刚才访问过当前节点的子节点（如果有两个子节点或只有一个右子节点，则pre指向右子节点，如果只有左子节点，则pre指向左子节点）
     if ((nullptr == p->left && nullptr == p->right) ||
 	(nullptr != pre && (pre == p->left || pre == p->right))) {
       visit(p);
