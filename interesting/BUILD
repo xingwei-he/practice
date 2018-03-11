@@ -32,3 +32,10 @@ cc_binary (
     "deduplicate_chars.cc",
   ],
 )
+
+cc_binary (
+  name = "path_of_sum",
+  srcs = [
+    "path_of_sum.cc",
+  ],
+)

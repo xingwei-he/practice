@@ -77,9 +77,11 @@ public:
 
   // 获得 type_num，可用这个值直接比大小
   int getTypeNum(const string& str) {
+    return 0;
   }
 
   int fight(const string& a, const string& b) {
+    return 0;
   }
 };
 
