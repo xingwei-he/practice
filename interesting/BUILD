@@ -25,3 +25,10 @@ cc_binary (
     "add_one_char_tobe_palindrome.cc",
   ],
 )
+
+cc_binary (
+  name = "deduplicate_chars",
+  srcs = [
+    "deduplicate_chars.cc",
+  ],
+)

@@ -6,3 +6,7 @@
 6. 回文串 lintcode:108/136/415/491/678	/回文串/palindrome/
 7. 添加一个字符构成回文串 add_one_char_tobe_palindrome.cc /回文串/palindrome/蘑菇街/
 8. 最长递增子序列 lintcode:76 /最长递增子序列/完美世界/
+9. 字符集合 deduplicate_chars.cc  /字符去重/华为/huawei/
+TODO 10. 旅途  trip.cc /dijkstra/单源最短路径/楚楚街/
+TODO 11. 解密  decrypt.cc  /
+
