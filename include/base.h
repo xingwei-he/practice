@@ -61,5 +61,26 @@ public:
   }
 };
 
+// 1D vector debug
+template<class T>
+void debug1DVector(std::vector<T> vec) {
+  for (int i = 0; i < vec.size(); i++) {
+    std::cout << std::setw(4) << vec[i];
+  }
+  std::cout << std::endl;
+}
+
+// 2D vector debug
+template<class T>
+void debug2DVector(std::vector<std::vector<T> > vec) {
+  for (int i = 0; i < vec.size(); i++) {
+    for (int j = 0; j < vec[i].size(); j++) {
+      std::cout << std::setw(4) << vec[i][j];
+    }
+    std::cout << std::endl;
+  }
+  std::cout << std::endl;
+}
+
 #endif
 
