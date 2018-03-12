@@ -927,6 +927,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_617_Maximum_Average_Subarray",
+  srcs = [
+    "617_Maximum_Average_Subarray.cc",
+  ],
+)
+
+cc_binary (
   name = "lintcode_638_Strings_Homomorphism",
   srcs = [
     "638_Strings_Homomorphism.cc",
