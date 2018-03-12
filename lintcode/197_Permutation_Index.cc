@@ -24,6 +24,7 @@ public:
    * @param A: An array of integers
    * @return: A long integer
    */
+  // 求阶乘
   long long getFactorial(long long n) {
     if (n < 0) {
       return -1;
@@ -49,14 +50,15 @@ public:
 	  si++;
 	}
       }
-      res += getFactorial(len - i - 1) * si;
+      res += getFactorial(len - i - 1) * si;// i 后数字个数的阶乘乘以 i 后面比 A[i] 小的数的个数
     }
     return res;
   }
 };
 
 int main() {
-  int arr[] = {2,6,4,5,8,1,7,3};
+  //int arr[] = {2,6,4,5,8,1,7,3};
+  int arr[] = {3,2,6,4};
   vector<int> nums(arr, arr + sizeof(arr)/sizeof(int));
   Solution sl;
   int res = sl.permutationIndex(nums);
