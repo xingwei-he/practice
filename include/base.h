@@ -24,6 +24,7 @@
 #include <cmath>
 #include <cstring>
 #include <climits>
+#include <cfloat>
 
 // Definition for singly-linked list.
 struct ListNode {
@@ -63,19 +64,19 @@ public:
 
 // 1D vector debug
 template<class T>
-void debug1DVector(std::vector<T> vec) {
+void debug1DVector(std::vector<T> vec, int width) {
   for (int i = 0; i < vec.size(); i++) {
-    std::cout << std::setw(4) << vec[i];
+    std::cout << std::setw(width) << vec[i];
   }
   std::cout << std::endl;
 }
 
 // 2D vector debug
 template<class T>
-void debug2DVector(std::vector<std::vector<T> > vec) {
+void debug2DVector(std::vector<std::vector<T> > vec, int width) {
   for (int i = 0; i < vec.size(); i++) {
     for (int j = 0; j < vec[i].size(); j++) {
-      std::cout << std::setw(4) << vec[i][j];
+      std::cout << std::setw(width) << vec[i][j];
     }
     std::cout << std::endl;
   }
