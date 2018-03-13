@@ -16,3 +16,4 @@ TODO 14. 最长公共子串  lintcode:
 16. 查找相同url	find_same_url.txt /facebook/百度/baidu/
 17. 最短摘要问题  shortest_summary.cc /必应/bing/百度/baidu/
 18. 红包算法  red_packet.cc /今日头条/
+19. 门票问题  ticket.txt  / 卡特兰数(Catalan Number) 算法/360/阿里/alibaba/
