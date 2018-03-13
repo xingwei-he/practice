@@ -15,3 +15,4 @@ TODO 14. 最长公共子串  lintcode:
 15. 最大平均值子数组  max_average.cc/lintcode:617  /facebook/
 16. 查找相同url	find_same_url.txt /facebook/百度/baidu/
 17. 最短摘要问题  shortest_summary.cc /必应/bing/百度/baidu/
+18. 红包算法  red_packet.cc /今日头条/

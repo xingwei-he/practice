@@ -53,3 +53,10 @@ cc_binary (
     "shortest_summary.cc",
   ],
 )
+
+cc_binary (
+  name = "red_packet",
+  srcs = [
+    "red_packet.cc",
+  ],
+)
