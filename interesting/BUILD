@@ -39,3 +39,10 @@ cc_binary (
     "path_of_sum.cc",
   ],
 )
+
+cc_binary (
+  name = "max_average",
+  srcs = [
+    "max_average.cc",
+  ],
+)
