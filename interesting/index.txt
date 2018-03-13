@@ -1,4 +1,4 @@
-1. KMP算法  kmp.cc  /kmp/KMP/字符串匹配/
+1. KMP算法  kmp.cc  /kmp/KMP/字符串匹配/阿里巴巴/alibaba
 2. 删除字符构造回文串 delete_chars_tobe_palindrome.cc /回文串/palindrome/腾讯/
 3. 按奇偶分类数组 split_odd_even.cc /数组/奇偶/快排/partition/百度/baidu/
 4. 股票交易日 lintcode:149/150/151/393	/股票/交易/买卖/stock/美团/
@@ -14,3 +14,4 @@ TODO 13. 航线
 TODO 14. 最长公共子串  lintcode:
 15. 最大平均值子数组  max_average.cc/lintcode:617  /facebook/
 16. 查找相同url	find_same_url.txt /facebook/百度/baidu/
+17. 最短摘要问题  shortest_summary.cc /必应/bing/百度/baidu/

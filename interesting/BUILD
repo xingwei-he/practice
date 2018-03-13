@@ -46,3 +46,10 @@ cc_binary (
     "max_average.cc",
   ],
 )
+
+cc_binary (
+  name = "shortest_summary",
+  srcs = [
+    "shortest_summary.cc",
+  ],
+)
