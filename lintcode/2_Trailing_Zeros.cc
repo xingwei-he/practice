@@ -98,6 +98,12 @@ public:
 
   // optimization v3
   // Accepted
+  // 对于 n! 可以展开为 n * (n-1) * (n-2) * ... * 1
+  // 在该序列中，每个 5 都可以和前面的 x2 相乘得到一个尾数至少有一个 0 的数，则 n/5 可得序列中 5 的个数（一个 0 的个数）
+  // 同理，每个 25 都可以和前面的 x4 相乘得到一个尾数至少有两个 0 的数，则 n/25 可得序列中 25 的个数（两个 0 的个数）
+  // 其实整个过程无需关注 5、25、125 等和谁相乘，只需要关注这些“5”的个数即可！
+  // 注意，在计算 5 的时候，已经计算过一次 25 了，所以只需 n/5 + (n/5)/5 即可
+  // 这是个递推过程，n/5 + (n/5)/5 + ((n/5)/5)/5 + ... 即为最后结果
   long long trailingZeros(long long n) {
     long long result = 0;
     long long temp = n;
@@ -112,6 +118,6 @@ public:
 int main() {
   Solution sl;
   //cout << sl.trailingZeros(1001171717) << endl;
-  cout << sl.trailingZeros(5) << endl;
+  cout << sl.trailingZeros(25) << endl;
   return 0;
 }
