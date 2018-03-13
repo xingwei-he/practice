@@ -111,6 +111,7 @@ public:
 
 int main() {
   Solution sl;
-  cout << sl.trailingZeros(1001171717) << endl;
+  //cout << sl.trailingZeros(1001171717) << endl;
+  cout << sl.trailingZeros(5) << endl;
   return 0;
 }
