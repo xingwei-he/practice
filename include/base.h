@@ -25,6 +25,7 @@
 #include <cstring>
 #include <climits>
 #include <cfloat>
+#include <ctime>
 
 // Definition for singly-linked list.
 struct ListNode {
