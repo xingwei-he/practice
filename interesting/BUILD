@@ -60,3 +60,10 @@ cc_binary (
     "red_packet.cc",
   ],
 )
+
+cc_binary (
+  name = "climb_stairs",
+  srcs = [
+    "climb_stairs.cc",
+  ],
+)

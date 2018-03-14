@@ -19,3 +19,4 @@ TODO 14. 最长公共子串  lintcode:
 19. 门票问题  ticket.txt  / 卡特兰数(Catalan Number) 算法/360/阿里/alibaba/
 20. 0的个数 lintcode:2	/阶乘/末尾0的个数/滴滴出行/
 21. 最大矩形面积  lintcode:122	/美团/
+22. 上台阶  climb_stairs.cc/lintcode:111  /动态规划/dp/京东/
