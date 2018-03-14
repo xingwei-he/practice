@@ -521,6 +521,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_122_Largest_Rectangle_in_Histogram",
+  srcs = [
+    "122_Largest_Rectangle_in_Histogram.cc",
+  ],
+)
+
+cc_binary (
   name = "lintcode_133_Longest_Words",
   srcs = [
     "133_Longest_Words.cc",
