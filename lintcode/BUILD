@@ -394,6 +394,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_91_Minimum_Adjustment_Cost",
+  srcs = [
+    "91_Minimum_Adjustment_Cost.cc",
+  ],
+)
+
+cc_binary (
   name = "lintcode_93_Balanced_Binary_Tree",
   srcs = [
     "93_Balanced_Binary_Tree.cc",
