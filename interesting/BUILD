@@ -67,3 +67,10 @@ cc_binary (
     "climb_stairs.cc",
   ],
 )
+
+cc_binary (
+  name = "bonus",
+  srcs = [
+    "bonus.cc",
+  ],
+)

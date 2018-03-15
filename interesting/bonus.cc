@@ -28,6 +28,43 @@ using namespace std;
  * 20
  */
 
+class Solution {
+public:
+  int getMinBonus(vector<int> scores) {
+    if (scores.size() <= 0) {
+      return 0;
+    }
+    int n = scores.size();
+    vector<int> bonus(n, 1);
+    for (int i = 0; i < n; i++) {
+      if (scores[i] < scores[i + 1]) {
+	bonus[i + 1] = bonus[i] + 1;
+      } else if (scores[i] == scores[i + 1]) {
+	bonus[i + 1] = bonus[i];
+      } else {
+	//bonus[i + 1] = 1;
+	for (int j = i + 1; j >= 0; j--) {
+	  if (scores[j - 1] > scores[j] && bonus[j - 1] <= bonus[j]) {
+	    bonus[j - 1] += 1;
+	  }
+	}
+      }
+    }
+    debug1DVector<int>(scores,4);
+    debug1DVector<int>(bonus,4);
+    int res = 0;
+    for (int i = 0; i < bonus.size(); i++) {
+      res += bonus[i];
+    }
+    return res;
+  }
+};
+
 int main() {
+  int arr[] = {10,20,32,12,32,45,11,21,31,41,33};
+  vector<int> scores(arr, arr + sizeof(arr)/sizeof(int));
+  Solution sl;
+  int res = sl.getMinBonus(scores);
+  cout << res << endl;
   return 0;
 }
