@@ -1017,6 +1017,12 @@ cc_binary (
   ],
 )
 
+cc_binary (
+  name = "lintcode_718_Repeat_String",
+  srcs = [
+    "718_Repeat_String.cc",
+  ],
+)
 
 cc_binary (
   name = "lintcode_720_Rearrange_a_String_With_Integers",
