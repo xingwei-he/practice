@@ -144,7 +144,7 @@ public:
 
   string convertWords(int number) {
     stack<string> st;
-    int len = getNumLen(number);
+    //int len = getNumLen(number);
     int sp_counter = 0;
     while (number != 0) {
       int last_3_num = number % 1000;
