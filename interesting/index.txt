@@ -24,3 +24,5 @@ TODO 14. 最长公共子串  lintcode:
 24. 发奖金  bonus.cc  /搜狐/
 25. 最小调整代价  lintcode:91 /动态规划/dp/
 26. 重复子串 lintcode:718 /string/字符串/find/ 
+27. 单词表示数字  lintcode:688	/string/字符串/
+28. 颜色分类  lintcode:148  /快速排序/快排/partition/荷兰三色旗/
