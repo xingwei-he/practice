@@ -570,6 +570,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_148_Sort_Colors",
+  srcs = [
+    "148_Sort_Colors.cc",
+  ],
+)
+
+cc_binary (
   name = "lintcode_149_Best_Time_to_Buy_and_Sell_Stock",
   srcs = [
     "149_Best_Time_to_Buy_and_Sell_Stock.cc",
