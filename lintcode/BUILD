@@ -570,6 +570,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_143_Sort_Colors_II",
+  srcs = [
+    "143_Sort_Colors_II.cc",
+  ],
+)
+
+cc_binary (
   name = "lintcode_148_Sort_Colors",
   srcs = [
     "148_Sort_Colors.cc",

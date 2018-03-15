@@ -55,10 +55,11 @@ public:
 	tp = st.top();
 	st.pop();
 	area_with_top = height[tp] * (st.empty() ? i : i - st.top() - 1);
-	int k = st.empty() ? i : (i - st.top() - 1);
+	//int k = st.empty() ? i : (i - st.top() - 1);
 	max_area = max(max_area, area_with_top);
       }
     }
+    TODO
     while (!st.empty()) {
       tp = st.top();
       st.pop();
