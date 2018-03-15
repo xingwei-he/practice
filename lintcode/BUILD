@@ -1004,6 +1004,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_688_The_Number_In_Words",
+  srcs = [
+    "688_The_Number_In_Words.cc",
+  ],
+)
+
+cc_binary (
   name = "lintcode_697_Check_Sum_of_Square_Numbers",
   srcs = [
     "697_Check_Sum_of_Square_Numbers.cc",
