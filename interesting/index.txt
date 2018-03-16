@@ -31,3 +31,5 @@ TODO 14. 最长公共子串  lintcode:
 TODO 31. 和为零的子矩阵  lintcode:405
 32. 最大正方形	lintcode:436  /动态规划/dp/
 33. 乘积最大子序列  lintcode:191  /动态规划/dp/
+34. 第k个排列 lintcode:388  /permutation/
+TODO 35, k数和 
