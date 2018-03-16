@@ -885,6 +885,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_477_Surrounded_Regions",
+  srcs = [
+    "477_Surrounded_Regions.cc",
+  ],
+)
+
+cc_binary (
   name = "lintcode_480_Binary_Tree_Paths",
   srcs = [
     "480_Binary_Tree_Paths.cc",

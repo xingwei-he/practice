@@ -35,22 +35,23 @@ public:
    * @return: an integer
    */
   void DFS(vector<vector<bool> >& grid, int x, int y) {
-    if (grid[x][y] == 1) {
+    if (grid[x][y] == 1) {// 将当前位置赋值 0
       grid[x][y] = 0;
     }
-    if (x - 1 >= 0 && grid[x - 1][y] == 1) {
+    if (x - 1 >= 0 && grid[x - 1][y] == 1) {// 向上
       DFS(grid, x - 1, y);
     }
-    if (x + 1 < grid.size() && grid[x + 1][y] == 1) {
+    if (x + 1 < grid.size() && grid[x + 1][y] == 1) {// 向下
       DFS(grid, x + 1, y);
     }
-    if (y - 1 >= 0 && grid[x][y - 1] == 1) {
+    if (y - 1 >= 0 && grid[x][y - 1] == 1) {// 向左
       DFS(grid, x, y - 1);
     }
-    if (y + 1 < grid[x].size() && grid[x][y + 1] == 1) {
+    if (y + 1 < grid[x].size() && grid[x][y + 1] == 1) {// 向右
       DFS(grid, x, y + 1);
     }
   }
+
   int numIslands(vector<vector<bool> > &grid) {
     int counter = 0;
     for (int i = 0; i < grid.size(); i++) {
