@@ -59,7 +59,6 @@ public:
 	max_area = max(max_area, area_with_top);
       }
     }
-    TODO
     while (!st.empty()) {
       tp = st.top();
       st.pop();
