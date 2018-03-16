@@ -28,7 +28,7 @@ using namespace std;
  * If k = 4, the fourth permutation is "231"
  */
 
-class Solution {\
+class Solution {
 public:
   /**
    * @param n: n
