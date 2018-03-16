@@ -25,4 +25,9 @@ TODO 14. 最长公共子串  lintcode:
 25. 最小调整代价  lintcode:91 /动态规划/dp/
 26. 重复子串 lintcode:718 /string/字符串/find/ 
 27. 单词表示数字  lintcode:688	/string/字符串/
-28. 颜色分类  lintcode:148  /快速排序/快排/partition/荷兰三色旗/
+28. 颜色分类  lintcode:148/143  /快速排序/快排/partition/荷兰三色旗/
+29. 被围绕的区域  lintcode:477	/深度优先搜索/dfs/
+30. 完美平方  lintcode:513  /动态规划/dp/
+TODO 31. 和为零的子矩阵  lintcode:405
+32. 最大正方形	lintcode:436  /动态规划/dp/
+33. 乘积最大子序列  lintcode:191  /动态规划/dp/
