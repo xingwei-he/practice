@@ -28,15 +28,16 @@ public:
    * @param k: An integer
    * @return: nothing
    */
+  // 整体思想是用 colors 数组存储颜色出现的次数
   void sortColors2(vector<int> &colors, int k) {
     int len = colors.size();
     if (len <= 0 || len < k) {
       return;
     }
     int i = 0;
-    int pos = 0;
-    while (i < len) {
-      if (colors[i] > 0) {
+    int pos = 0;// 统计时颜色要放进的桶号
+    while (i < len) {// 该循环用来统计各颜色的个数
+      if (colors[i] > 0) {// 如果大于 0，则该位置有一个要去选桶的颜色，否则，如果小于等于 0，该位置没有要选桶的颜色，值是桶内颜色的个数的负数
 	pos = colors[i] - 1;
 	if (colors[pos] > 0) {
 	  colors[i] = colors[pos];
