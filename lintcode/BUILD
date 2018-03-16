@@ -920,6 +920,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_513_Perfect_Squares",
+  srcs = [
+    "513_Perfect_Squares.cc",
+  ],
+)
+
+cc_binary (
   name = "lintcode_517_Ugly_Number",
   srcs = [
     "517_Ugly_Number.cc",
