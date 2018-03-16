@@ -33,7 +33,7 @@ public:
     for (int i = 1; i < nums.size(); i++) {
       max_vec[i] = max(nums[i], max(max_vec[i - 1] * nums[i], min_vec[i - 1] * nums[i]));
       min_vec[i] = min(nums[i], min(max_vec[i - 1] * nums[i], min_vec[i - 1] * nums[i]));
-      if (max_product < max_vec[i]) {
+      if (max_product < max_vec[i]) {// 做简单修改即可求最小乘积
 	max_product = max_vec[i];
       }
     }
