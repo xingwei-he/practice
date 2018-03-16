@@ -703,6 +703,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_191_Maximum_Product_Subarray",
+  srcs = [
+    "191_Maximum_Product_Subarray.cc",
+  ],
+)
+
+cc_binary (
   name = "lintcode_197_Permutation_Index",
   srcs = [
     "197_Permutation_Index.cc",
