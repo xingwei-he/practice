@@ -850,6 +850,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_436_Maximal_Square",
+  srcs = [
+    "436_Maximal_Square.cc",
+  ],
+)
+
+cc_binary (
   name = "lintcode_451_Swap_Nodes_in_Pairs",
   srcs = [
     "451_Swap_Nodes_in_Pairs.cc",
