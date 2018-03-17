@@ -689,6 +689,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_183_Wood_Cut",
+  srcs = [
+    "183_Wood_Cut.cc",
+  ],
+)
+
+cc_binary (
   name = "lintcode_185_Matrix_Zigzag_Traversal",
   srcs = [
     "185_Matrix_Zigzag_Traversal.cc",
