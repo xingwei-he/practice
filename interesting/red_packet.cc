@@ -12,7 +12,7 @@ using namespace std;
 
 class Solution {
 public:
-  static const double MAX_AMOUNT = 200.0;// 红包最大金额
+  static constexpr double MAX_AMOUNT = 200.0;// 红包最大金额
   static const int MAX_PEOPEL = 500;// 群里最大人数
   vector<double> getRedPackets(double amount, int k) {
     vector<double> res;

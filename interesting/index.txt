@@ -32,4 +32,7 @@ TODO 31. 和为零的子矩阵  lintcode:405
 32. 最大正方形	lintcode:436  /动态规划/dp/
 33. 乘积最大子序列  lintcode:191  /动态规划/dp/
 34. 第k个排列 lintcode:388  /permutation/
-TODO 35, k数和 
+TODO 35. k数和	lintcode:89 /sum/
+36. 链表排序  lintcode:98 /快速排序/快排/归并排序/
+37. 链表划分  lintcode:96 /链表操作/
+38. 木材加工  lintcode:183  /二分查找/
