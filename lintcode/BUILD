@@ -941,6 +941,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_508_Wiggle_Sort",
+  srcs = [
+    "508_Wiggle_Sort.cc",
+  ],
+)
+
+cc_binary (
   name = "lintcode_513_Perfect_Squares",
   srcs = [
     "513_Perfect_Squares.cc",
