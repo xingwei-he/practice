@@ -38,8 +38,8 @@ public:
     }
     ListNode* temp = new ListNode(-1);
     temp->next = head;
-    ListNode* left = temp;
-    ListNode* right = temp;
+    ListNode* left = temp;// left 指向左侧最后一个小于 pivot 的元素
+    ListNode* right = temp;// right 指向 left 右侧最后一个大于等于 pivot 的元素
     while (nullptr != right->next) {
       while (nullptr != left->next && left->next->val < pivot) {
 	left = left->next;
