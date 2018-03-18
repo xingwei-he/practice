@@ -955,6 +955,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_510_Maximal_Rectangle",
+  srcs = [
+    "510_Maximal_Rectangle.cc",
+  ],
+)
+
+cc_binary (
   name = "lintcode_513_Perfect_Squares",
   srcs = [
     "513_Perfect_Squares.cc",
