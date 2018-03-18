@@ -1093,3 +1093,10 @@ cc_binary (
     "720_Rearrange_a_String_With_Integers.cc",
   ],
 )
+
+cc_binary (
+  name = "lintcode_721_Next_Sparse_Number",
+  srcs = [
+    "721_Next_Sparse_Number.cc",
+  ],
+)
