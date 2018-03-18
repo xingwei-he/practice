@@ -38,3 +38,4 @@ TODO 35. k数和	lintcode:89 /sum/
 38. 木材加工  lintcode:183  /二分查找/
 39. 摆动排序  lintcode:507,508	/谷歌/google/
 40. 下一个稀疏数  lintcode:721	/二进制表示/
+41. 编辑距离  lintcode:119,640	/动态规划/dp/
