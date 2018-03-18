@@ -521,6 +521,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_119_Edit_Distance",
+  srcs = [
+    "119_Edit_Distance.cc",
+  ],
+)
+
+cc_binary (
   name = "lintcode_115_Unique_Paths_II",
   srcs = [
     "115_Unique_Paths_II.cc",
@@ -993,6 +1000,13 @@ cc_binary (
   name = "lintcode_569_Add_Digits",
   srcs = [
     "569_Add_Digits.cc",
+  ],
+)
+
+cc_binary (
+  name = "lintcode_640_Edit_Distance_II",
+  srcs = [
+    "640_Edit_Distance_II.cc",
   ],
 )
 
