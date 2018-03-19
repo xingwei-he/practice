@@ -864,6 +864,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_424_Evaluate_Reverse_Polish_Notation",
+  srcs = [
+    "424_Evaluate_Reverse_Polish_Notation.cc",
+  ],
+)
+
+cc_binary (
   name = "lintcode_433_Number_of_Islands",
   srcs = [
     "433_Number_of_Islands.cc",
