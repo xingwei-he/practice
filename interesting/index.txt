@@ -41,3 +41,5 @@ TODO 35. k数和	lintcode:89 /sum/
 41. 编辑距离  lintcode:119,640	/动态规划/dp/
 42. 最大矩形  lintcode:510  /动态规划/dp/
 TODO 43. IP地址	lintcode:426  /深度优先搜索/dfs/
+44. 逆波兰表达式  lintcode:424	/栈/stack/
+TODO 45. 删除数字  lintcode:182  
