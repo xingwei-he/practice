@@ -39,4 +39,5 @@ TODO 35. k数和	lintcode:89 /sum/
 39. 摆动排序  lintcode:507,508	/谷歌/google/
 40. 下一个稀疏数  lintcode:721	/二进制表示/
 41. 编辑距离  lintcode:119,640	/动态规划/dp/
-TODO 42. 最大矩形  lintcode:510  /动态规划/dp/
+42. 最大矩形  lintcode:510  /动态规划/dp/
+TODO 43. IP地址	lintcode:426  /深度优先搜索/dfs/
