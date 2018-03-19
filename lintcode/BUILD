@@ -696,6 +696,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_182_Delete_Digits",
+  srcs = [
+    "182_Delete_Digits.cc",
+  ],
+)
+
+cc_binary (
   name = "lintcode_183_Wood_Cut",
   srcs = [
     "183_Wood_Cut.cc",
