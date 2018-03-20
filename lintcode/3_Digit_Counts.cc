@@ -27,6 +27,7 @@ public:
    * @param : An integer
    * @return: An integer denote the count of digit k in 1..n
    */
+  /*
   // 方法一 穷举法
   int countK(const int& n, const int& k) {
     int temp = n;
@@ -47,12 +48,28 @@ public:
     }
     return counter;
   }
-  // 方法二 利用规律
+  */
+  int digitCounts(int k, int n) {
+    int count = 0;
+    if (k == 0) {
+      count = 1;
+    }   
+    for (int i = 1; i <= n; i++) {
+      int number = i;
+      while (number > 0) {
+	if (number % 10 == k) {
+	  count += 1;
+	}
+	number /= 10;
+      }
+    }
+    return count;
+  }
 };
 
 int main() {
-  int n = 359;
-  int k = 2;
+  int n = 12;
+  int k = 1;
   cout << "n:" << n << "\tk:" << k << endl; 
   Solution sl;
   int res = sl.digitCounts(k, n);
