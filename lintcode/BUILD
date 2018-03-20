@@ -801,6 +801,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_374_Spiral_Matrix",
+  srcs = [
+    "374_Spiral_Matrix.cc",
+  ],
+)
+
+cc_binary (
   name = "lintcode_375_Clone_Binary_Tree",
   srcs = [
     "375_Clone_Binary_Tree.cc",
