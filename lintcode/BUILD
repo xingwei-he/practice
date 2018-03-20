@@ -1102,6 +1102,14 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_692_Sliding_Window_Unique_Elements_Sum",
+  srcs = [
+    "692_Sliding_Window_Unique_Elements_Sum.cc",
+  ],
+)
+
+
+cc_binary (
   name = "lintcode_697_Check_Sum_of_Square_Numbers",
   srcs = [
     "697_Check_Sum_of_Square_Numbers.cc",
