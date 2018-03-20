@@ -647,6 +647,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_162_Set_Matrix_Zeroes",
+  srcs = [
+    "162_Set_Matrix_Zeroes.cc",
+  ],
+)
+
+cc_binary (
   name = "lintcode_165_Merge_Two_Sorted_Lists",
   srcs = [
     "165_Merge_Two_Sorted_Lists.cc",
@@ -762,6 +769,13 @@ cc_binary (
   name = "lintcode_245_Subtree",
   srcs = [
     "245_Subtree.cc",
+  ],
+)
+
+cc_binary (
+  name = "lintcode_360_Sliding_Window_Median",
+  srcs = [
+    "360_Sliding_Window_Median.cc",
   ],
 )
 
