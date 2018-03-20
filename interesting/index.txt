@@ -42,4 +42,8 @@ TODO 35. k数和	lintcode:89 /sum/
 42. 最大矩形  lintcode:510  /动态规划/dp/
 TODO 43. IP地址	lintcode:426  /深度优先搜索/dfs/
 44. 逆波兰表达式  lintcode:424	/栈/stack/
-TODO 45. 删除数字  lintcode:182  
+45. 删除数字 lintcode:182  //
+TODO 46. 滑动窗口 lintcode:360,362,692	/sliding window/
+47. 矩阵归零  lintcode:162  //
+48. 统计数字  lintcode:3  /穷举法/
+49. 螺旋矩阵  lintcode:374,381
