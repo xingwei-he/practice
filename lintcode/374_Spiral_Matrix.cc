@@ -36,8 +36,6 @@ public:
     }
     // 分别记录四个边界
     int up = 0, down = matrix.size() - 1, left = 0, right = matrix[0].size() - 1;
-    int total = matrix.size() * matrix[0].size();
-    int i = 0;
     while (up <= down && left <= right) {
       // 注意
       // 下列每个 for 循环要测试当前要遍历的行/列的合法性

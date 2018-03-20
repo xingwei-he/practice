@@ -772,12 +772,12 @@ cc_binary (
   ],
 )
 
-cc_binary (
-  name = "lintcode_360_Sliding_Window_Median",
-  srcs = [
-    "360_Sliding_Window_Median.cc",
-  ],
-)
+#cc_binary (
+#  name = "lintcode_360_Sliding_Window_Median",
+#  srcs = [
+#    "360_Sliding_Window_Median.cc",
+#  ],
+#)
 
 cc_binary (
   name = "lintcode_365_Count_1_in_Binary",
@@ -811,6 +811,13 @@ cc_binary (
   name = "lintcode_375_Clone_Binary_Tree",
   srcs = [
     "375_Clone_Binary_Tree.cc",
+  ],
+)
+
+cc_binary (
+  name = "lintcode_381_Spiral_Matrix_II",
+  srcs = [
+    "381_Spiral_Matrix_II.cc",
   ],
 )
 
