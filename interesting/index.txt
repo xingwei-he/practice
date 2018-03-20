@@ -47,3 +47,6 @@ TODO 46. 滑动窗口 lintcode:360,362,692	/sliding window/
 47. 矩阵归零  lintcode:162  //
 48. 统计数字  lintcode:3  /穷举法/
 49. 螺旋矩阵  lintcode:374,381
+50. 第k大的数 lintcode:5  /快速排序/快排/partition/
+TODO 51. 子集  lintcode:17,18
+TODO 52. 最接近的三数之和  lintcode:59
