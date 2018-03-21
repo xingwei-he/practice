@@ -549,6 +549,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_116_Jump_Game",
+  srcs = [
+    "116_Jump_Game.cc",
+  ],
+)
+
+cc_binary (
   name = "lintcode_122_Largest_Rectangle_in_Histogram",
   srcs = [
     "122_Largest_Rectangle_in_Histogram.cc",
