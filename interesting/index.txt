@@ -54,3 +54,5 @@ TODO 52. 最接近的三数之和  lintcode:59
 54. 最小调整代价  lintcode:91 /动态规划/dp/
 55. 三元组/三数之和  lintcode:57  //
 56. 四元祖/四数之和  lintcode:58  //
+57. 最长公共子串  lintcode:79 /动态规划/dp/
+58. 跳跃游戏  lintcode:116,117	/贪心算法/
