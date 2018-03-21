@@ -64,6 +64,10 @@ public:
 	      p4--;
 	    }
 	    p4--;
+	  } else if (numbers[p3] + numbers[p4] > t) {
+	    p4--;
+	  } else {
+	    p3++;
 	  }
 	}
 	while (p2 <= len - 3 && numbers[p2] == numbers[p2 + 1]) {
