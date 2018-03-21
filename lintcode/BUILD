@@ -246,6 +246,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_57_3Sum",
+  srcs = [
+    "57_3Sum.cc",
+  ],
+)
+
+cc_binary (
   name = "lintcode_60_Search_Insert_Position",
   srcs = [
     "60_Search_Insert_Position.cc",
