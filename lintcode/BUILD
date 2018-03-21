@@ -724,6 +724,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_187_Gas_Station",
+  srcs = [
+    "187_Gas_Station.cc",
+  ],
+)
+
+cc_binary (
   name = "lintcode_190_Next_Permutation_II",
   srcs = [
     "190_Next_Permutation_II.cc",
