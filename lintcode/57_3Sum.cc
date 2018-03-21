@@ -36,7 +36,7 @@ public:
       return res;
     }
     sort(numbers.begin(), numbers.end());
-    debug1DVector<int>(numbers, 3);
+    //bug1DVector<int>(numbers, 3);
     int i = 0, j = 0, k = 0;
     int target = 0;
     while (i <= len - 3) {
