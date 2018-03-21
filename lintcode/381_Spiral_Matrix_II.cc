@@ -29,7 +29,7 @@ public:
    * @param n: An integer
    * @return: a square matrix
    */
-  vector<vector<int>> generateMatrix(int n) {
+  vector<vector<int> > generateMatrix(int n) {
     vector<vector<int> > matrix(n, vector<int>(n, 0));
     int up = 0, down = n - 1, left = 0, right = n - 1;
     int val = 1;
