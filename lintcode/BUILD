@@ -1088,6 +1088,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_582_Word_Break_II",
+  srcs = [
+    "582_Word_Break_II.cc",
+  ],
+)
+
+cc_binary (
   name = "lintcode_640_Edit_Distance_II",
   srcs = [
     "640_Edit_Distance_II.cc",
