@@ -59,7 +59,7 @@ public:
     return max_length;
   }
   bool wordBreak(string s, unordered_set<string> &dict) {
-    int max_length = getMaxLength(dict);
+    int max_length = getMaxLength(dict);// 获取字典最长单词长度
     // 用 seg[i] 记录 s[0]~s[i-1] 是否可以被分割，其中 s[0] 初始化为 true
     vector<bool> seg(s.size() + 1, false);
     seg[0] = true;
