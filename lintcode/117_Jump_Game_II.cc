@@ -27,10 +27,29 @@ public:
    * @return: An integer
    */
   int jump(vector<int> &A) {
-
+    int cur_max = A[0];
+    int step_counter = 0;
+    for (int i = 1; i < A.size(); i++) {
+      if (i > cur_max) {
+	 return -1;
+      }
+      if (cur_max >= A.size() - 1) {
+	return step_counter + 1;
+      } else {
+	if (i + A[i] > cur_max) {
+	  cur_max = i + A[i];
+	  step_counter++;
+	}
+      }
+    }
   }
 };
 
 int main() {
+  int arr[] = {17,8,29,17,35,28,14,2,45,8,6,54,24,43,20,14,33,31,27,11};
+  vector<int> steps(arr, arr + sizeof(arr)/sizeof(int));
+  Solution sl;
+  int res = sl.jump(steps);
+  cout << res << endl;
   return 0;
 }

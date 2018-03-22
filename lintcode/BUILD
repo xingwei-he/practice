@@ -535,13 +535,6 @@ cc_binary (
 )
 
 cc_binary (
-  name = "lintcode_119_Edit_Distance",
-  srcs = [
-    "119_Edit_Distance.cc",
-  ],
-)
-
-cc_binary (
   name = "lintcode_115_Unique_Paths_II",
   srcs = [
     "115_Unique_Paths_II.cc",
@@ -552,6 +545,20 @@ cc_binary (
   name = "lintcode_116_Jump_Game",
   srcs = [
     "116_Jump_Game.cc",
+  ],
+)
+
+cc_binary (
+  name = "lintcode_117_Jump_Game_II",
+  srcs = [
+    "117_Jump_Game_II.cc",
+  ],
+)
+
+cc_binary (
+  name = "lintcode_119_Edit_Distance",
+  srcs = [
+    "119_Edit_Distance.cc",
   ],
 )
 
