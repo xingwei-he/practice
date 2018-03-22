@@ -548,12 +548,12 @@ cc_binary (
   ],
 )
 
-cc_binary (
-  name = "lintcode_117_Jump_Game_II",
-  srcs = [
-    "117_Jump_Game_II.cc",
-  ],
-)
+#cc_binary (
+#  name = "lintcode_117_Jump_Game_II",
+#  srcs = [
+#    "117_Jump_Game_II.cc",
+#  ],
+#)
 
 cc_binary (
   name = "lintcode_119_Edit_Distance",
@@ -1154,6 +1154,13 @@ cc_binary (
   name = "lintcode_680_Split_String",
   srcs = [
     "680_Split_String.cc",
+  ],
+)
+
+cc_binary (
+  name = "lintcode_683_Word_Break_III",
+  srcs = [
+    "683_Word_Break_III.cc",
   ],
 )
 
