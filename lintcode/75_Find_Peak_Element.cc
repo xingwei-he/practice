@@ -22,13 +22,13 @@ using namespace std;
  * Find a peak element in this array. Return the index of the peak.
  *
  * Notice
- *  It's guaranteed the array has at least one peak.
- *  The array may contain multiple peeks, find any of them.
- *  The array has at least 3 numbers in it.
+ *   It's guaranteed the array has at least one peak.
+ *   The array may contain multiple peeks, find any of them.
+ *   The array has at least 3 numbers in it.
 
- *  Example
- *  Given [1, 2, 1, 3, 4, 5, 7, 6]
- *  Return index 1 (which is number 2) or 6 (which is number 7)
+ * Example
+ *   Given [1, 2, 1, 3, 4, 5, 7, 6]
+ *   Return index 1 (which is number 2) or 6 (which is number 7)
  */
 
 class Solution {
