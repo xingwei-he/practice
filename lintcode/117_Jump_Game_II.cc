@@ -26,6 +26,7 @@ public:
    * @param A: A list of integers
    * @return: An integer
    */
+  // 贪心算法
   int jump(vector<int> &A) {
     int cur_max = A[0];
     int step_counter = 0;
@@ -42,6 +43,7 @@ public:
 	}
       }
     }
+    return step_counter;
   }
 };
 

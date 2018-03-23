@@ -548,12 +548,12 @@ cc_binary (
   ],
 )
 
-#cc_binary (
-#  name = "lintcode_117_Jump_Game_II",
-#  srcs = [
-#    "117_Jump_Game_II.cc",
-#  ],
-#)
+cc_binary (
+  name = "lintcode_117_Jump_Game_II",
+  srcs = [
+    "117_Jump_Game_II.cc",
+  ],
+)
 
 cc_binary (
   name = "lintcode_119_Edit_Distance",
