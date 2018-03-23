@@ -885,6 +885,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_400_Maximum_Gap",
+  srcs = [
+    "400_Maximum_Gap.cc",
+  ],
+)
+
+cc_binary (
   name = "lintcode_407_Plus_One",
   srcs = [
     "407_Plus_One.cc",
