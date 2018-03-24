@@ -83,6 +83,13 @@ cc_binary (
   ],
 )
 
+#cc_binary (
+#  name = "lintcode_30_Insert_Interval",
+#  srcs = [
+#    "30_Insert_Interval.cc",
+#  ],
+#)
+
 cc_binary (
   name = "lintcode_31_Partition_Array",
   srcs = [
@@ -869,6 +876,13 @@ cc_binary (
     "381_Spiral_Matrix_II.cc",
   ],
 )
+
+#cc_binary (
+#  name = "lintcode_387_The_Smallest_Difference",
+#  srcs = [
+#    "387_The_Smallest_Difference.cc",
+#  ],
+#)
 
 cc_binary (
   name = "lintcode_388_Permutation_Sequence",

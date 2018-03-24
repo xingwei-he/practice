@@ -61,3 +61,6 @@ TODO 52. 最接近的三数之和  lintcode:59
 61. 最大间距  lintcode:400  /桶排序/
 62. 数字组合  lintcode:135,153	/深度优先搜索/dfs/
 63. 落单的数  lintcode:82,83,84 /位运算/
+TODO 64. 插入区间  lintcode:30 /栈/
+65. 尾部的零  lintcode:2  //
+66. 组合  lintcode:152	/深度优先搜索/dfs/
