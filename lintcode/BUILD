@@ -577,6 +577,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_135_Combination_Sum",
+  srcs = [
+    "135_Combination_Sum.cc",
+  ],
+)
+
+cc_binary (
   name = "lintcode_136_Palindrome_Partitioning",
   srcs = [
     "136_Palindrome_Partitioning.cc",
@@ -643,6 +650,13 @@ cc_binary (
   name = "lintcode_152_Combinations",
   srcs = [
     "152_Combinations.cc",
+  ],
+)
+
+cc_binary (
+  name = "lintcode_153_Combination_Sum_II",
+  srcs = [
+    "153_Combination_Sum_II.cc",
   ],
 )
 
