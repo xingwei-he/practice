@@ -801,6 +801,13 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_198_Permutation_Index_II",
+  srcs = [
+    "198_Permutation_Index_II.cc",
+  ],
+)
+
+cc_binary (
   name = "lintcode_211_String_Permutation",
   srcs = [
     "211_String_Permutation.cc",
