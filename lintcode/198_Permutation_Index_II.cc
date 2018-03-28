@@ -61,11 +61,7 @@ public:
 	  x *= getFactorial(iter->second);
 	}
       }
-      cout << "temp:" << temp << endl;
-      cout << "n:" << n << endl;
-      cout << "x:" << x << endl;
       res += (temp * n / x);
-      cout << "res:" << res << endl;
     }
     return res;
   }
