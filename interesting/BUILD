@@ -81,3 +81,10 @@ cc_binary (
     "bonus.cc",
   ],
 )
+
+cc_binary (
+  name = "min_subsequence",
+  srcs = [
+    "min_subsequence.cc",
+  ],
+)

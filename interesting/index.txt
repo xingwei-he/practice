@@ -64,3 +64,4 @@ TODO 52. 最接近的三数之和  lintcode:59
 TODO 64. 插入区间  lintcode:30 /栈/
 65. 尾部的零  lintcode:2  //
 66. 组合  lintcode:152	/深度优先搜索/dfs/
+67. 字典序最小的子序列	min_subsequence.cc  /栈/今日头条/
