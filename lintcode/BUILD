@@ -428,6 +428,12 @@ cc_binary (
   ],
 )
 
+cc_binary (
+  name = "lintcode_94_Binary_Tree_Maximum_Path_Sum",
+  srcs = [
+    "94_Binary_Tree_Maximum_Path_Sum.cc",
+  ],
+)
 
 cc_binary (
   name = "lintcode_96_Partition_List",
