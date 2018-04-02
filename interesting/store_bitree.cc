@@ -37,11 +37,11 @@ public:
       }
       NodeInfo &n = nodes[pos_map[ptr]];
       n.val = ptr->val;
+      cout << "* val:" << n.val << endl;
       if (nullptr != ptr->left) {
 	q.push(ptr->left);
 	n.left_pos = nodes.size();
 	pos_map.insert(pair<TreeNode*, int>(ptr->left, n.left_pos));
-	cout << "!!! " << nodes.size() << "->" << pos_map.size() << endl;
 	nodes.resize(pos_map.size());
       } else {
 	n.left_pos = 0;
@@ -53,15 +53,14 @@ public:
 	} else {
 	  n.right_pos = nodes.size();
 	}
-	cout << "* " << ptr->val << ptr->right->val << "  " << n.right_pos << endl;
 	//pos_map.insert(pair<TreeNode*, int>(ptr->right, n.right_pos));
 	pos_map[ptr->right] = n.right_pos;
-	cout << "* " << ptr->val << ptr->right->val << "  " << n.right_pos << endl;
-	cout << "??? " << nodes.size() << "->" << pos_map.size() << endl;
 	nodes.resize(pos_map.size());
       } else {
 	n.right_pos = 0;
       }
+      cout << n.val << "  " << n.left_pos << "  " << n.right_pos << endl;
+      break;
       /*
       cout << "********" << endl;
       for (int i = 0; i < nodes.size(); i++) {
@@ -69,9 +68,10 @@ public:
       }
       */
     }
-    //for (int i = 0; i < nodes.size(); i++) {
-    //  cout << nodes[i].val << "\t" << nodes[i].left_pos << "  " << nodes[i].right_pos << endl;
-    //}
+    cout << "!!!!!!!!!!!!!!!!!!!!!!!!!" << endl;
+    for (int i = 0; i < nodes.size(); i++) {
+      cout << nodes[i].val << "\t" << nodes[i].left_pos << "  " << nodes[i].right_pos << endl;
+    }
   }
 };
 
