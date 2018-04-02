@@ -41,56 +41,35 @@ public:
    * @param root: The root of binary tree.
    * @return: An integer
    */
-  int getMaxPathSum(TreeNode* root, int& current_path_sum) {
-    if (nullptr == root) {
-      return current_path_sum;
-    }
-    int left_max_path_sum = getMaxPathSum(root->left, current_path_sum + root->val);
-    int right_max_path_sum = getMaxPathSum(root->right, current_path_sum + root->val);
+  int maxPathSum(TreeNode *root) {
+    int max_sum = INT_MIN;
+    getMaxPathSum(root, max_sum);
+    return max_sum;
   }
-
-  int getMaxPathSum(TreeNode* root, int& left_max_sum, int& right_max_sum) {
-    if (nullptr == root) {
-      left_max_sum = INT_MIN;
-      right_max_sum = INT_MIN;
-      return 0;
-    }
-    int maxLL, maxLR, maxRL, maxRR;
-    int maxL, maxR;
-    if (nullptr != root->left) {
-      maxL = getMaxPathSum(root->left, maxLL, maxLR);
-      left_max_sum = max(maxLL, maxLR) + root->left->val;
-    } else {
-      maxL = INT_MIN;
-      left_max_sum = INT_MIN;
-    }
-    if (nullptr != root->right) {
-      maxR = getMaxPathSum(root->right, maxRL, maxRR);
-      right_max_sum = max(maxRL, maxRR) + root->right->val;
-    } else {
-      maxR = INT_MIN;
-      right_max_sum = INT_MIN;
-    }
-    return max(max(maxL, maxR), left_max_sum + right_max_sum + root->val);
-  }
-
-  int maxPathSum(TreeNode * root) {
+  
+  int getMaxPathSum(TreeNode * root, int &cur_max) {
     if (nullptr == root) {
       return 0;
     }
-    int left_max_sum, right_max_sum;
-    return getMaxPathSum(root, left_max_sum, right_max_sum);
+    int left_max = 0, right_max = 0;
+    left_max = getMaxPathSum(root->left, cur_max);
+    right_max = getMaxPathSum(root->right, cur_max);
+    int left_temp = 0 > left_max ? 0 : left_max;
+    int right_temp = 0 > right_max ? 0 : right_max;
+    int temp = left_temp + right_temp + root->val;
+    cur_max = cur_max > temp ? cur_max : temp;
+    return max(0, max(left_max, right_max)) + root->val;
   }
 };
 
 int main() {
   TreeNode* root = new TreeNode(1);
   root->right = new TreeNode(2);
-  root->right->left = new TreeNode(3);
+  root->right->left = new TreeNode(-3);
   root->right->right = new TreeNode(4);
   root->right->right->right = new TreeNode(5);
   root->left = new TreeNode(6);
-  root->left->left = new TreeNode(7);
+  root->left->left = new TreeNode(-7);
   Solution sl;
   int res = sl.maxPathSum(root);
   cout << res << endl;
