@@ -37,7 +37,7 @@ public:
    * @param target: Given the target number
    * @return: All the combinations that sum to target
    */
-  vector<vector<int>> combinationSum2(vector<int> &nums, int target) {
+  vector<vector<int> > combinationSum2(vector<int> &nums, int target) {
     set<vector<int> > res;// 防止结果出现重复，所以用 set 进行去重
     if (nums.size() <= 0) {
       return vector<vector<int> >(res.begin(), res.end());

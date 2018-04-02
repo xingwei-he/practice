@@ -32,7 +32,7 @@ public:
    * @param target: An integer
    * @return: A list of lists of integers
    */
-  vector<vector<int>> combinationSum(vector<int> &candidates, int target) {
+  vector<vector<int> > combinationSum(vector<int> &candidates, int target) {
     vector<vector<int> > res;
     if (candidates.size() <= 0) {
       return res;
