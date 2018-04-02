@@ -1,7 +1,7 @@
 1. KMP算法  kmp.cc  /kmp/KMP/字符串匹配/阿里巴巴/alibaba/
 2. 删除字符构造回文串 delete_chars_tobe_palindrome.cc /回文串/palindrome/腾讯/阿里巴巴/alibaba/
 3. 按奇偶分类数组 split_odd_even.cc /数组/奇偶/快排/partition/百度/baidu/
-4. 股票交易日 lintcode:149/150/151/393	/股票/交易/买卖/stock/美团/小米/
+4. 股票交易日 lintcode:149/150/151/393	/股票/交易/买卖/stock/美团/小米/今日头条/
 5. 扎金花 golden_flower.cc  /扎金花/搜狐/souhu/
 6. 回文串 lintcode:108/136/415/491/678	/回文串/palindrome/
 7. 添加一个字符构成回文串 add_one_char_tobe_palindrome.cc /回文串/palindrome/蘑菇街/
@@ -67,3 +67,5 @@ TODO 64. 插入区间  lintcode:30 /栈/
 67. 字典序最小的子序列	min_subsequence.cc  /栈/今日头条/
 68. 最大连续子序列和  lintcode:41 /动态规划/dp/今日头条/
 69. 翻转二叉树	binary_tree /二叉树镜像/递归/
+70. 二叉树中的最大路径和  lintcode:94 /二叉树/递归/今日头条/
+71. 二叉树的持久化（存储二叉树）  store_bitree.cc /二叉树/今日头条/

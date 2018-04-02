@@ -82,9 +82,16 @@ cc_binary (
   ],
 )
 
+#cc_binary (
+#  name = "min_subsequence",
+#  srcs = [
+#    "min_subsequence.cc",
+#  ],
+#)
+
 cc_binary (
-  name = "min_subsequence",
+  name = "store_bitree",
   srcs = [
-    "min_subsequence.cc",
+    "store_bitree.cc",
   ],
 )
