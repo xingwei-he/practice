@@ -6,9 +6,12 @@
  * Created Time:星期一  4/ 2 18:26:46 2018
  ***************************************************/
 #include <iostream>
+#include <fstream>
 #include "../include/base.h"
 
 using namespace std;
+
+const long MAX_NODE_NUM = 1000;
 
 class NodeInfo {
 public:
@@ -24,6 +27,7 @@ public:
       return;
     }
     vector<NodeInfo> nodes;
+    nodes.reserve(MAX_NODE_NUM);
     map<TreeNode*, int> pos_map;
     queue<TreeNode*> q;
     q.push(root);
@@ -37,7 +41,6 @@ public:
       }
       NodeInfo &n = nodes[pos_map[ptr]];
       n.val = ptr->val;
-      cout << "* val:" << n.val << endl;
       if (nullptr != ptr->left) {
 	q.push(ptr->left);
 	n.left_pos = nodes.size();
@@ -53,25 +56,18 @@ public:
 	} else {
 	  n.right_pos = nodes.size();
 	}
-	//pos_map.insert(pair<TreeNode*, int>(ptr->right, n.right_pos));
-	pos_map[ptr->right] = n.right_pos;
+	pos_map.insert(pair<TreeNode*, int>(ptr->right, n.right_pos));
 	nodes.resize(pos_map.size());
       } else {
 	n.right_pos = 0;
       }
-      cout << n.val << "  " << n.left_pos << "  " << n.right_pos << endl;
-      break;
-      /*
-      cout << "********" << endl;
-      for (int i = 0; i < nodes.size(); i++) {
-        cout << nodes[i].val << "\t" << nodes[i].left_pos << "  " << nodes[i].right_pos << endl;
-      }
-      */
     }
-    cout << "!!!!!!!!!!!!!!!!!!!!!!!!!" << endl;
+    ofstream fp(filename);
     for (int i = 0; i < nodes.size(); i++) {
-      cout << nodes[i].val << "\t" << nodes[i].left_pos << "  " << nodes[i].right_pos << endl;
+      fp << nodes[i].val << "\t" << nodes[i].left_pos << "\t" << nodes[i].right_pos << endl;
+      //cout << nodes[i].val << "\t" << nodes[i].left_pos << "\t" << nodes[i].right_pos << endl;
     }
+    fp.close();
   }
 };
 
