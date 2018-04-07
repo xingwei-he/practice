@@ -95,3 +95,17 @@ cc_binary (
     "store_bitree.cc",
   ],
 )
+
+cc_binary (
+  name = "max_map_sum",
+  srcs = [
+    "max_map_sum.cc",
+  ],
+)
+
+cc_binary (
+  name = "or_add",
+  srcs = [
+    "or_add.cc",
+  ],
+)

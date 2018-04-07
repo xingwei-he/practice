@@ -69,3 +69,6 @@ TODO 64. 插入区间  lintcode:30 /栈/
 69. 翻转二叉树	binary_tree /二叉树镜像/递归/
 70. 二叉树中的最大路径和  lintcode:94 /二叉树/递归/今日头条/
 71. 二叉树的持久化（存储二叉树）  store_bitree.cc /二叉树/今日头条/
+72. 最大映射  max_map_sum.cc  /权值计算/今日头条/
+73. 或和计算  or_add.cc	/今日头条/
+TODO 74. 注水  fill_water.cc	/今日头条/
