@@ -415,6 +415,20 @@ cc_binary (
 )
 
 cc_binary (
+  name = "lintcode_89_k_Sum",
+  srcs = [
+    "89_k_Sum.cc",
+  ],
+)
+
+cc_binary (
+  name = "lintcode_90_k_Sum_II",
+  srcs = [
+    "90_k_Sum_II.cc",
+  ],
+)
+
+cc_binary (
   name = "lintcode_91_Minimum_Adjustment_Cost",
   srcs = [
     "91_Minimum_Adjustment_Cost.cc",
