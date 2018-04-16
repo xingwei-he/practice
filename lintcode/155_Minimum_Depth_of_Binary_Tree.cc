@@ -18,7 +18,7 @@ using namespace std;
  * Example
  * Given a binary tree as follow:
  *     1
- *    / \ 
+ *    / \
  *   2   3
  *      / \
  *     4   5
