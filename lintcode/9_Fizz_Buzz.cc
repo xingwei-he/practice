@@ -40,7 +40,7 @@ public:
     while (0 != n) {
       int temp = n % 10;
       n /= 10;
-      res.insert(0, 1, temp + '0');
+      res.insert(0, 1, char(temp + '0'));
     }
     return res;
   }
