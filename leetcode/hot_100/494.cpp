@@ -12,23 +12,18 @@ using namespace std;
 
 class Solution {
 public:
-	void get_sum_way(const vector<int>& nums, int target, int& sum, int index, int& counter) {
+	void get_sum_way(const vector<int>& nums, int target, int sum, int index, int& counter) {
 		if (index == nums.size()) {
 			if (sum == target) { // 结果OK
 				counter++;
-				return;
 			}
 			return;
 		}
 		
 		// + nums[index]
-		sum = sum + nums[index];
-		get_sum_way(nums, target, sum, index + 1, counter);
-		sum = sum - nums[index];
+		get_sum_way(nums, target, sum + nums[index], index + 1, counter);
 		// - nums[index]
-		sum = sum - nums[index];
-		get_sum_way(nums, target, sum, index + 1, counter);
-		sum = sum + nums[index];
+		get_sum_way(nums, target, sum - nums[index], index + 1, counter);
 	}
 
     int findTargetSumWays(vector<int>& nums, int target) {
