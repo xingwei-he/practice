@@ -41,14 +41,6 @@ public:
     			}
     		}
     	}
-        cout << word1 << endl;
-        cout << word2 << endl;
-        for (int i = 0; i <= len1; i++) {
-            for (int j = 0; j <= len2; j++) {
-                cout << dp[i][j] << "\t";
-            }
-            cout << endl;
-        }
     	return dp[len1][len2];
     }
 };
