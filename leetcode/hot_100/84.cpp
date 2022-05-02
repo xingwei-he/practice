@@ -17,7 +17,7 @@ public:
             return 0;
         }
         int max_area = 0;
-        vector<int> inc_stack; // 递增栈
+        vector<int> inc_stack; // 高度递增栈，记录索引值
         // 设置左右两端的边界
         heights.insert(heights.begin(), 0);
         heights.emplace_back(0);
@@ -28,7 +28,6 @@ public:
                 int left = inc_stack.back() + 1;
                 int right = i - 1;
                 max_area = max(max_area, (right - left + 1) * (heights[cur]));
-                cout << "max_area:" << max_area << endl;
             }
             inc_stack.emplace_back(i);
         }
