@@ -5,37 +5,34 @@ using namespace std;
 
 class Solution {
 public:
+    // 快排的一次划分
     void moveZeroes(vector<int>& nums) {
-        int n = nums.size();
-        if (n <= 1) {
+        if (nums.empty()) {
             return;
         }
-        int i = 0, j = 0; // i 指向零，j 指向非零
-        while (nums[i] != 0 && i < n) {
-            i++;
+        int n = nums.size();
+        if (1 == n) {
+            return;
         }
-        j = i;
-        while (nums[j] == 0 && j < n) {
-            j++;
-        }
-        while (i < n && j < n) {
-            swap(nums[i], nums[j]);
-            while (nums[i] != 0 && i < n) {
+        int pivot = 0; // 不代表坐标
+        int i = -1, j = 0;
+        while (j < n) {
+            if (nums[j] != pivot) {
                 i++;
+                swap(nums[i], nums[j]);
             }
-            while (nums[j] == 0 && j < n) {
-                j++;
-            }
+            j++;
         }
     }
 };
 
 int main() {
-	vector<int> nums{0,0};
+	vector<int> nums{0,1,0,3,12};
 	Solution s;
 	s.moveZeroes(nums);
 	for (auto &i:nums) {
-		cout << i << endl;
+		cout << i << ",";
 	}
+    cout << endl;
 	return 0;
 }
